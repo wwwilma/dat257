@@ -1,2 +1,2 @@
 # dat257
-DAT257 Agile Software Project Management VT23
+Agile Software Project Management, IT 2.4, VT23
