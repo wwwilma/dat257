@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
   return (
@@ -18,9 +19,14 @@ function App() {
 }
 
 function Button(){
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+
   return(
-    <button className="button">
-      *Insert count value here*
+    <button className="button" onClick={handleClick}>
+      Clicked {count} times
     </button>
   );
 }
