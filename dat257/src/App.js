@@ -3,22 +3,25 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        Track
+      </h1>
+      <p1>
+        Push this button everytime you do something good for the environment
+      </p1>
+        <div>
+            <Button />
+        </div>
     </div>
+  );
+}
+
+function Button(){
+  return(
+    <button className="button">
+      *Insert count value here*
+    </button>
   );
 }
 
