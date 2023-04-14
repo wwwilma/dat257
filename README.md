@@ -1,7 +1,12 @@
-# dat257
-# Agile Software Project Management, IT 2.4, VT23   
+# dat257 Agile Software Project Management
+### IT 2.4, VT23   
 
-## Project Group 10:  
+## Project Description
+Our goal is to create a website where users can track their daily habits by tracking certain sustainable actions. 
+Our idea is to make users aware of their impact on the planet accourding to goal 12 of UN's sustainability goals; Responsible Consumption and Production.
+Giving out information about why sustainable actions are important is a part of the website's goal to help motivate the users to change their habits for the better.
+
+## Project Group 10  
 * Atosa Daneshvar-Minabi – [Tussies](https://github.com/Tussies) 
 * Emma Axelsson – [emmaaxelsso](https://github.com/emmaaxelsso)
 * Hanna Harnesk – [HGodisH](https://github.com/HGodisH)   
