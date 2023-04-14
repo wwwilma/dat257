@@ -1,0 +1,12 @@
+Individual Reflection 1 
+
+The last couple of weeks the group has been deciding on what project to work with.
+We have decided on a habit tracking app. We created a Trello workspace, a workspace in Figma, and a Git repository.
+We have written user stories and this week we completed sprint 1 where the goal was to create the website and to give it some functionality.
+The group have collaborated, we have had discussions and everyone have been a part of the decision-making.
+We managed to complete all tasks for sprint 1, and we did also decide on how to give story points, as well as what our definition of done means.
+It has been a good start, and we have been working agile in the sense that we have made small improvements.
+Although, we may have decided on too few user stories for the first sprint: everyone didn't have that much to do.
+I have been reading on React and been searching for information that will be useful during the project work.
+I have also been writing parts of our team reflection from this sprint.
+It will be exciting to see what we learn next week when we'll have more user stories to complete.
