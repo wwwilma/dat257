@@ -1,0 +1,4 @@
+This week I learnt some basic React functionality to develop a button. This was a great introduction into the JavaScript language.
+The start of the project was slow and alot of our userstories was dependet on oneanother which made it diffiicult to progress the project, this
+is something that we can takeaway.
+Next week my goal is to understand how to seperate the site into diffrent sections so more elements can be added.
