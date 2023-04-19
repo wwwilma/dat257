@@ -1,0 +1,14 @@
+/*  src/Footer.css  */
+.Footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0.2em;
+    background-color: #7DAC88;
+    color: #373a47;
+    position: absolute;
+    bottom: 0;
+}
+
