@@ -1,48 +1,20 @@
-/*
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import Statistics from './pages/Statistics';
+import Menu from './Menu';
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <h1>
-        Track
-      </h1>
-      <p1>
-        Push this button everytime you do something good for the environment
-      </p1>
-        <div>
-            <Button />
-        </div>
-    </div>
+    <BrowserRouter>
+      <div>
+          <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/statistics" element={<Statistics/>} />
+      </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
-
-function Button(){
-  const [count, setCount] = useState(0);
-  function handleClick() {
-    setCount(count + 1);
-  }
-
-  return(
-    <button className="button" onClick={handleClick}>
-      Clicked {count} times
-    </button>
-  );
-}
-
-export default App;
-*/
-import CardGrid from "./CardGrid";
-
-function App() {
-    return (
-        <div className="App">
-            <CardGrid   />
-        </div>
-    );
-}
-
-export default App;
-

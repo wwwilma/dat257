@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff3619c2-ba14-46f4-8f0a-399ced1ebe2d" name="Changes" comment="card">
-      <change beforePath="$PROJECT_DIR$/dat257/src/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/src/CardGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/CardGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/src/img/dusch.png" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/img/shower.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/src/img/kallsortering.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/img/sortWaste.jpg" afterDir="false" />
+    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +18,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
     </option>
   </component>
   <component name="Git.Settings">
@@ -40,28 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Kristin/DAT038/dat257/dat257/src/img",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Kristin\DAT038\dat257\dat257\src\img" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.npm start">
+}</component>
+  <component name="RunManager">
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/dat257/package.json" />
       <command value="start" />
@@ -69,61 +69,23 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/dat257/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.start" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ff3619c2-ba14-46f4-8f0a-399ced1ebe2d" name="Changes" comment="" />
+      <changelist id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="" />
       <created>1681291967880</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681291967880</updated>
       <workItem from="1681291969125" duration="429000" />
-      <workItem from="1681293080692" duration="2110000" />
-      <workItem from="1681298501795" duration="58000" />
-      <workItem from="1681452166100" duration="4365000" />
-      <workItem from="1681845435707" duration="4911000" />
+      <workItem from="1681807723333" duration="2065000" />
+      <workItem from="1681809842119" duration="1900000" />
+      <workItem from="1681886683430" duration="2304000" />
     </task>
-    <task id="LOCAL−00001" summary="card">
-      <created>1681891224919</created>
-      <option name="number" value="LOCAL−00001" />
-      <option name="presentableId" value="LOCAL−00001" />
-      <updated>1681891224919</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="card" />
-    <option name="LAST_COMMIT_MESSAGE" value="card" />
   </component>
 </project>
