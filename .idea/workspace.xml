@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dat257/src/img/TRACK.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-19_09_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-19_09_53__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +62,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pauli\IdeaProjects\dat257\dat257\src\img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/dat257/package.json" />
@@ -87,5 +93,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ska ta bort den här branchen" />
+    <option name="LAST_COMMIT_MESSAGE" value="ska ta bort den här branchen" />
   </component>
 </project>
