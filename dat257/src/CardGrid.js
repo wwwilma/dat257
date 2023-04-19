@@ -6,11 +6,11 @@ import "./Card.css";
 export default function CardGrid() {
     const cardData = [
         {
-            imgSrc: require("./img/dusch.png"),
+            imgSrc: require("./img/shower.png"),
             title: "Take a shower for less than 10 min",
         },
         {
-            imgSrc: require("./img/kallsortering.jpg"),
+            imgSrc: require("./img/sortWaste.jpg"),
             title: "Sort waste into recyclable groups",
         },
     ];

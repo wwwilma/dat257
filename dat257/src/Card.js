@@ -7,14 +7,14 @@ export default function Card({ imgSrc, title} ) {
     const titleRef = useRef(null);
     const doneRef = useRef(null);
     const timesDoneRef = useRef(null)
-    //constant for
+    //constant for counting the button clicks
     const [count, setCount] = useState(0);
 
     //Function for handle click on card
     function handleClickCard() {
         console.log('Card clicked');
     }
-
+    //function for handle the clicks on the done button
     function handleClickDone() {
         setCount(count + 1);
     }

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff3619c2-ba14-46f4-8f0a-399ced1ebe2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dat257/src/Card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dat257/src/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dat257/src/CardGrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dat257/src/img/dusch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dat257/src/img/kallsortering.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/App.js" afterDir="false" />
+    <list default="true" id="ff3619c2-ba14-46f4-8f0a-399ced1ebe2d" name="Changes" comment="card">
+      <change beforePath="$PROJECT_DIR$/dat257/src/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/src/CardGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/CardGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/src/img/dusch.png" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/img/shower.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/src/img/kallsortering.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/img/sortWaste.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,8 +97,15 @@
       <workItem from="1681293080692" duration="2110000" />
       <workItem from="1681298501795" duration="58000" />
       <workItem from="1681452166100" duration="4365000" />
-      <workItem from="1681845435707" duration="4329000" />
+      <workItem from="1681845435707" duration="4911000" />
     </task>
+    <task id="LOCAL−00001" summary="card">
+      <created>1681891224919</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1681891224919</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,5 +121,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="card" />
+    <option name="LAST_COMMIT_MESSAGE" value="card" />
   </component>
 </project>
