@@ -1,0 +1,541 @@
+Index: dat257/src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import logo from './logo.svg';\r\nimport './App.css';\r\nimport { useState } from 'react';\r\n\r\nfunction App() {\r\n  return (\r\n    <div>\r\n      <h1>\r\n        Track\r\n      </h1>\r\n      <p1>\r\n        Push this button everytime you do something good for the environment\r\n      </p1>\r\n        <div>\r\n            <Button />\r\n        </div>\r\n    </div>\r\n  );\r\n}\r\n\r\nfunction Button(){\r\n  const [count, setCount] = useState(0);\r\n  function handleClick() {\r\n    setCount(count + 1);\r\n  }\r\n\r\n  return(\r\n    <button className=\"button\" onClick={handleClick}>\r\n      Clicked {count} times\r\n    </button>\r\n  );\r\n}\r\n\r\nexport default App;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dat257/src/App.js b/dat257/src/App.js
+--- a/dat257/src/App.js	(revision e6d24650088af9ca35971ba854487a91657ed7fc)
++++ b/dat257/src/App.js	(date 1681889717223)
+@@ -1,4 +1,4 @@
+-import logo from './logo.svg';
++//import logo from './logo.svg';
+ import './App.css';
+ import { useState } from 'react';
+ 
+Index: dat257/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"dat257\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@testing-library/jest-dom\": \"^5.16.5\",\r\n    \"@testing-library/react\": \"^13.4.0\",\r\n    \"@testing-library/user-event\": \"^13.5.0\",\r\n    \"react\": \"^18.2.0\",\r\n    \"react-dom\": \"^18.2.0\",\r\n    \"react-scripts\": \"5.0.1\",\r\n    \"web-vitals\": \"^2.1.4\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dat257/package.json b/dat257/package.json
+--- a/dat257/package.json	(revision e6d24650088af9ca35971ba854487a91657ed7fc)
++++ b/dat257/package.json	(date 1681808369096)
+@@ -7,6 +7,7 @@
+     "@testing-library/react": "^13.4.0",
+     "@testing-library/user-event": "^13.5.0",
+     "react": "^18.2.0",
++    "react-burger-menu": "^3.0.9",
+     "react-dom": "^18.2.0",
+     "react-scripts": "5.0.1",
+     "web-vitals": "^2.1.4"
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"55bbd33a-ad8d-4476-9326-6b41098fb11d\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2OJwOqYnn5AqmIzdfOgt2cB1btZ\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"npm start\" type=\"js.build_tools.npm\">\r\n      <package-json value=\"$PROJECT_DIR$/dat257/package.json\" />\r\n      <command value=\"start\" />\r\n      <node-interpreter value=\"project\" />\r\n      <envs />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"55bbd33a-ad8d-4476-9326-6b41098fb11d\" name=\"Changes\" comment=\"\" />\r\n      <created>1681291967880</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1681291967880</updated>\r\n      <workItem from=\"1681291969125\" duration=\"429000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision e6d24650088af9ca35971ba854487a91657ed7fc)
++++ b/.idea/workspace.xml	(date 1681890791298)
+@@ -4,36 +4,56 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="" />
++    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dat257/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/package-lock.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dat257/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/package.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dat257/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/App.js" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="JavaScript File" />
++        <option value="CSS File" />
++      </list>
++    </option>
++  </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2OJwOqYnn5AqmIzdfOgt2cB1btZ" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="npm start" type="js.build_tools.npm">
+       <package-json value="$PROJECT_DIR$/dat257/package.json" />
+@@ -52,6 +72,9 @@
+       <option name="presentableId" value="Default" />
+       <updated>1681291967880</updated>
+       <workItem from="1681291969125" duration="429000" />
++      <workItem from="1681807723333" duration="2065000" />
++      <workItem from="1681809842119" duration="1900000" />
++      <workItem from="1681886683430" duration="2062000" />
+     </task>
+     <servers />
+   </component>
+Index: dat257/package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dat257/package-lock.json b/dat257/package-lock.json
+--- a/dat257/package-lock.json	(revision e6d24650088af9ca35971ba854487a91657ed7fc)
++++ b/dat257/package-lock.json	(date 1681808369571)
+@@ -12,6 +12,7 @@
+         "@testing-library/react": "^13.4.0",
+         "@testing-library/user-event": "^13.5.0",
+         "react": "^18.2.0",
++        "react-burger-menu": "^3.0.9",
+         "react-dom": "^18.2.0",
+         "react-scripts": "5.0.1",
+         "web-vitals": "^2.1.4"
+@@ -4788,6 +4789,15 @@
+         "ajv": "^6.9.1"
+       }
+     },
++    "node_modules/amdefine": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.1.tgz",
++      "integrity": "sha512-S2Hw0TtNkMJhIabBwIojKL9YHO5T0n5eNqWJ7Lrlel/zDbftQpxpapi8tZs3X1HWa+u+QeydGmzzNU0m09+Rcg==",
++      "optional": true,
++      "engines": {
++        "node": ">=0.4.2"
++      }
++    },
+     "node_modules/ansi-escapes": {
+       "version": "4.3.2",
+       "resolved": "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-4.3.2.tgz",
+@@ -4982,6 +4992,84 @@
+       "resolved": "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz",
+       "integrity": "sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA=="
+     },
++    "node_modules/ast-transform": {
++      "version": "0.0.0",
++      "resolved": "https://registry.npmjs.org/ast-transform/-/ast-transform-0.0.0.tgz",
++      "integrity": "sha512-e/JfLiSoakfmL4wmTGPjv0HpTICVmxwXgYOB8x+mzozHL8v+dSfCbrJ8J8hJ0YBP0XcYu1aLZ6b/3TnxNK3P2A==",
++      "dependencies": {
++        "escodegen": "~1.2.0",
++        "esprima": "~1.0.4",
++        "through": "~2.3.4"
++      }
++    },
++    "node_modules/ast-transform/node_modules/escodegen": {
++      "version": "1.2.0",
++      "resolved": "https://registry.npmjs.org/escodegen/-/escodegen-1.2.0.tgz",
++      "integrity": "sha512-yLy3Cc+zAC0WSmoT2fig3J87TpQ8UaZGx8ahCAs9FL8qNbyV7CVyPKS74DG4bsHiL5ew9sxdYx131OkBQMFnvA==",
++      "dependencies": {
++        "esprima": "~1.0.4",
++        "estraverse": "~1.5.0",
++        "esutils": "~1.0.0"
++      },
++      "bin": {
++        "escodegen": "bin/escodegen.js",
++        "esgenerate": "bin/esgenerate.js"
++      },
++      "engines": {
++        "node": ">=0.4.0"
++      },
++      "optionalDependencies": {
++        "source-map": "~0.1.30"
++      }
++    },
++    "node_modules/ast-transform/node_modules/esprima": {
++      "version": "1.0.4",
++      "resolved": "https://registry.npmjs.org/esprima/-/esprima-1.0.4.tgz",
++      "integrity": "sha512-rp5dMKN8zEs9dfi9g0X1ClLmV//WRyk/R15mppFNICIFRG5P92VP7Z04p8pk++gABo9W2tY+kHyu6P1mEHgmTA==",
++      "bin": {
++        "esparse": "bin/esparse.js",
++        "esvalidate": "bin/esvalidate.js"
++      },
++      "engines": {
++        "node": ">=0.4.0"
++      }
++    },
++    "node_modules/ast-transform/node_modules/estraverse": {
++      "version": "1.5.1",
++      "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-1.5.1.tgz",
++      "integrity": "sha512-FpCjJDfmo3vsc/1zKSeqR5k42tcIhxFIlvq+h9j0fO2q/h2uLKyweq7rYJ+0CoVvrGQOxIS5wyBrW/+vF58BUQ==",
++      "engines": {
++        "node": ">=0.4.0"
++      }
++    },
++    "node_modules/ast-transform/node_modules/esutils": {
++      "version": "1.0.0",
++      "resolved": "https://registry.npmjs.org/esutils/-/esutils-1.0.0.tgz",
++      "integrity": "sha512-x/iYH53X3quDwfHRz4y8rn4XcEwwCJeWsul9pF1zldMbGtgOtMNBEOuYWwB1EQlK2LRa1fev3YAgym/RElp5Cg==",
++      "engines": {
++        "node": ">=0.10.0"
++      }
++    },
++    "node_modules/ast-transform/node_modules/source-map": {
++      "version": "0.1.43",
++      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.1.43.tgz",
++      "integrity": "sha512-VtCvB9SIQhk3aF6h+N85EaqIaBFIAfZ9Cu+NJHHVvc8BbEcnvDcFw6sqQ2dQrT6SlOrZq3tIvyD9+EGq/lJryQ==",
++      "optional": true,
++      "dependencies": {
++        "amdefine": ">=0.0.4"
++      },
++      "engines": {
++        "node": ">=0.8.0"
++      }
++    },
++    "node_modules/ast-types": {
++      "version": "0.7.8",
++      "resolved": "https://registry.npmjs.org/ast-types/-/ast-types-0.7.8.tgz",
++      "integrity": "sha512-RIOpVnVlltB6PcBJ5BMLx+H+6JJ/zjDGU0t7f0L6c2M1dqcK92VQopLBlPQ9R80AVXelfqYgjcPLtHtDbNFg0Q==",
++      "engines": {
++        "node": ">= 0.6"
++      }
++    },
+     "node_modules/ast-types-flow": {
+       "version": "0.0.7",
+       "resolved": "https://registry.npmjs.org/ast-types-flow/-/ast-types-flow-0.0.7.tgz",
+@@ -5485,6 +5573,29 @@
+       "resolved": "https://registry.npmjs.org/browser-process-hrtime/-/browser-process-hrtime-1.0.0.tgz",
+       "integrity": "sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow=="
+     },
++    "node_modules/browser-resolve": {
++      "version": "1.11.3",
++      "resolved": "https://registry.npmjs.org/browser-resolve/-/browser-resolve-1.11.3.tgz",
++      "integrity": "sha512-exDi1BYWB/6raKHmDTCicQfTkqwN5fioMFV4j8BsfMU4R2DK/QfZfK7kOVkmWCNANf0snkBzqGqAJBao9gZMdQ==",
++      "dependencies": {
++        "resolve": "1.1.7"
++      }
++    },
++    "node_modules/browser-resolve/node_modules/resolve": {
++      "version": "1.1.7",
++      "resolved": "https://registry.npmjs.org/resolve/-/resolve-1.1.7.tgz",
++      "integrity": "sha512-9znBF0vBcaSN3W2j7wKvdERPwqTxSpCq+if5C0WoTCyV9n24rua28jeuQ2pL/HOf+yUe/Mef+H/5p60K0Id3bg=="
++    },
++    "node_modules/browserify-optional": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/browserify-optional/-/browserify-optional-1.0.1.tgz",
++      "integrity": "sha512-VrhjbZ+Ba5mDiSYEuPelekQMfTbhcA2DhLk2VQWqdcCROWeFqlTcXZ7yfRkXCIl8E+g4gINJYJiRB7WEtfomAQ==",
++      "dependencies": {
++        "ast-transform": "0.0.0",
++        "ast-types": "^0.7.0",
++        "browser-resolve": "^1.8.1"
++      }
++    },
+     "node_modules/browserslist": {
+       "version": "4.21.5",
+       "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.21.5.tgz",
+@@ -5720,6 +5831,11 @@
+       "resolved": "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz",
+       "integrity": "sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA=="
+     },
++    "node_modules/classnames": {
++      "version": "2.3.2",
++      "resolved": "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz",
++      "integrity": "sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw=="
++    },
+     "node_modules/clean-css": {
+       "version": "5.3.2",
+       "resolved": "https://registry.npmjs.org/clean-css/-/clean-css-5.3.2.tgz",
+@@ -7724,6 +7840,11 @@
+         "node": ">= 0.6"
+       }
+     },
++    "node_modules/eve": {
++      "version": "0.5.4",
++      "resolved": "https://registry.npmjs.org/eve/-/eve-0.5.4.tgz",
++      "integrity": "sha512-aqprQ9MAOh1t66PrHxDFmMXPlgNO6Uv1uqvxmwjprQV50jaQ2RqO7O1neY4PJwC+hMnkyMDphu2AQPOPZdjQog=="
++    },
+     "node_modules/eventemitter3": {
+       "version": "4.0.7",
+       "resolved": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz",
+@@ -14176,6 +14297,25 @@
+         "node": ">=14"
+       }
+     },
++    "node_modules/react-burger-menu": {
++      "version": "3.0.9",
++      "resolved": "https://registry.npmjs.org/react-burger-menu/-/react-burger-menu-3.0.9.tgz",
++      "integrity": "sha512-Qy15hkCxwxNEKfqdAv43F+8ZSl+/c6KkqrBwGP0CesFYJ02onHtiUFUbuhSWCMtBH8/n0HhfekFlp/NyCdKYzQ==",
++      "dependencies": {
++        "browserify-optional": "^1.0.0",
++        "classnames": "^2.2.6",
++        "eve": "~0.5.1",
++        "prop-types": "^15.7.2",
++        "snapsvg-cjs": "0.0.6"
++      },
++      "engines": {
++        "node": ">=4.0.0"
++      },
++      "peerDependencies": {
++        "react": ">=0.14.0",
++        "react-dom": ">=0.14.0"
++      }
++    },
+     "node_modules/react-dev-utils": {
+       "version": "12.0.1",
+       "resolved": "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-12.0.1.tgz",
+@@ -15159,6 +15299,25 @@
+         "node": ">=8"
+       }
+     },
++    "node_modules/snapsvg": {
++      "version": "0.5.1",
++      "resolved": "https://registry.npmjs.org/snapsvg/-/snapsvg-0.5.1.tgz",
++      "integrity": "sha512-CjwWYsL7+CCk1vCk9BBKGYS4WJVDfJAOMWU+Zhzf8wf6pAm/xT34wnpaMPAgcgCNkxuU6OkQPPd8wGuRCY9aNw==",
++      "dependencies": {
++        "eve": "~0.5.1"
++      }
++    },
++    "node_modules/snapsvg-cjs": {
++      "version": "0.0.6",
++      "resolved": "https://registry.npmjs.org/snapsvg-cjs/-/snapsvg-cjs-0.0.6.tgz",
++      "integrity": "sha512-7NNvoGrc3BQvWz5rWK1DsD5/Vni4STswz5B3JrBADboQWcN8OBVGjYVJFPT5JkUXb2iVnEflZANhufEpEcTHXw==",
++      "dependencies": {
++        "snapsvg": "0.5.1"
++      },
++      "peerDependencies": {
++        "eve": "~0.5.1"
++      }
++    },
+     "node_modules/sockjs": {
+       "version": "0.3.24",
+       "resolved": "https://registry.npmjs.org/sockjs/-/sockjs-0.3.24.tgz",
+@@ -15911,6 +16070,11 @@
+       "resolved": "https://registry.npmjs.org/throat/-/throat-6.0.2.tgz",
+       "integrity": "sha512-WKexMoJj3vEuK0yFEapj8y64V0A6xcuPuK9Gt1d0R+dzCSJc0lHqQytAbSB4cDAK0dWh4T0E2ETkoLE2WZ41OQ=="
+     },
++    "node_modules/through": {
++      "version": "2.3.8",
++      "resolved": "https://registry.npmjs.org/through/-/through-2.3.8.tgz",
++      "integrity": "sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg=="
++    },
+     "node_modules/thunky": {
+       "version": "1.1.0",
+       "resolved": "https://registry.npmjs.org/thunky/-/thunky-1.1.0.tgz",
+@@ -20610,6 +20774,12 @@
+       "integrity": "sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==",
+       "requires": {}
+     },
++    "amdefine": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.1.tgz",
++      "integrity": "sha512-S2Hw0TtNkMJhIabBwIojKL9YHO5T0n5eNqWJ7Lrlel/zDbftQpxpapi8tZs3X1HWa+u+QeydGmzzNU0m09+Rcg==",
++      "optional": true
++    },
+     "ansi-escapes": {
+       "version": "4.3.2",
+       "resolved": "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-4.3.2.tgz",
+@@ -20753,6 +20923,58 @@
+       "resolved": "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz",
+       "integrity": "sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA=="
+     },
++    "ast-transform": {
++      "version": "0.0.0",
++      "resolved": "https://registry.npmjs.org/ast-transform/-/ast-transform-0.0.0.tgz",
++      "integrity": "sha512-e/JfLiSoakfmL4wmTGPjv0HpTICVmxwXgYOB8x+mzozHL8v+dSfCbrJ8J8hJ0YBP0XcYu1aLZ6b/3TnxNK3P2A==",
++      "requires": {
++        "escodegen": "~1.2.0",
++        "esprima": "~1.0.4",
++        "through": "~2.3.4"
++      },
++      "dependencies": {
++        "escodegen": {
++          "version": "1.2.0",
++          "resolved": "https://registry.npmjs.org/escodegen/-/escodegen-1.2.0.tgz",
++          "integrity": "sha512-yLy3Cc+zAC0WSmoT2fig3J87TpQ8UaZGx8ahCAs9FL8qNbyV7CVyPKS74DG4bsHiL5ew9sxdYx131OkBQMFnvA==",
++          "requires": {
++            "esprima": "~1.0.4",
++            "estraverse": "~1.5.0",
++            "esutils": "~1.0.0",
++            "source-map": "~0.1.30"
++          }
++        },
++        "esprima": {
++          "version": "1.0.4",
++          "resolved": "https://registry.npmjs.org/esprima/-/esprima-1.0.4.tgz",
++          "integrity": "sha512-rp5dMKN8zEs9dfi9g0X1ClLmV//WRyk/R15mppFNICIFRG5P92VP7Z04p8pk++gABo9W2tY+kHyu6P1mEHgmTA=="
++        },
++        "estraverse": {
++          "version": "1.5.1",
++          "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-1.5.1.tgz",
++          "integrity": "sha512-FpCjJDfmo3vsc/1zKSeqR5k42tcIhxFIlvq+h9j0fO2q/h2uLKyweq7rYJ+0CoVvrGQOxIS5wyBrW/+vF58BUQ=="
++        },
++        "esutils": {
++          "version": "1.0.0",
++          "resolved": "https://registry.npmjs.org/esutils/-/esutils-1.0.0.tgz",
++          "integrity": "sha512-x/iYH53X3quDwfHRz4y8rn4XcEwwCJeWsul9pF1zldMbGtgOtMNBEOuYWwB1EQlK2LRa1fev3YAgym/RElp5Cg=="
++        },
++        "source-map": {
++          "version": "0.1.43",
++          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.1.43.tgz",
++          "integrity": "sha512-VtCvB9SIQhk3aF6h+N85EaqIaBFIAfZ9Cu+NJHHVvc8BbEcnvDcFw6sqQ2dQrT6SlOrZq3tIvyD9+EGq/lJryQ==",
++          "optional": true,
++          "requires": {
++            "amdefine": ">=0.0.4"
++          }
++        }
++      }
++    },
++    "ast-types": {
++      "version": "0.7.8",
++      "resolved": "https://registry.npmjs.org/ast-types/-/ast-types-0.7.8.tgz",
++      "integrity": "sha512-RIOpVnVlltB6PcBJ5BMLx+H+6JJ/zjDGU0t7f0L6c2M1dqcK92VQopLBlPQ9R80AVXelfqYgjcPLtHtDbNFg0Q=="
++    },
+     "ast-types-flow": {
+       "version": "0.0.7",
+       "resolved": "https://registry.npmjs.org/ast-types-flow/-/ast-types-flow-0.0.7.tgz",
+@@ -21137,6 +21359,31 @@
+       "resolved": "https://registry.npmjs.org/browser-process-hrtime/-/browser-process-hrtime-1.0.0.tgz",
+       "integrity": "sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow=="
+     },
++    "browser-resolve": {
++      "version": "1.11.3",
++      "resolved": "https://registry.npmjs.org/browser-resolve/-/browser-resolve-1.11.3.tgz",
++      "integrity": "sha512-exDi1BYWB/6raKHmDTCicQfTkqwN5fioMFV4j8BsfMU4R2DK/QfZfK7kOVkmWCNANf0snkBzqGqAJBao9gZMdQ==",
++      "requires": {
++        "resolve": "1.1.7"
++      },
++      "dependencies": {
++        "resolve": {
++          "version": "1.1.7",
++          "resolved": "https://registry.npmjs.org/resolve/-/resolve-1.1.7.tgz",
++          "integrity": "sha512-9znBF0vBcaSN3W2j7wKvdERPwqTxSpCq+if5C0WoTCyV9n24rua28jeuQ2pL/HOf+yUe/Mef+H/5p60K0Id3bg=="
++        }
++      }
++    },
++    "browserify-optional": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/browserify-optional/-/browserify-optional-1.0.1.tgz",
++      "integrity": "sha512-VrhjbZ+Ba5mDiSYEuPelekQMfTbhcA2DhLk2VQWqdcCROWeFqlTcXZ7yfRkXCIl8E+g4gINJYJiRB7WEtfomAQ==",
++      "requires": {
++        "ast-transform": "0.0.0",
++        "ast-types": "^0.7.0",
++        "browser-resolve": "^1.8.1"
++      }
++    },
+     "browserslist": {
+       "version": "4.21.5",
+       "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.21.5.tgz",
+@@ -21285,6 +21532,11 @@
+       "resolved": "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz",
+       "integrity": "sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA=="
+     },
++    "classnames": {
++      "version": "2.3.2",
++      "resolved": "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz",
++      "integrity": "sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw=="
++    },
+     "clean-css": {
+       "version": "5.3.2",
+       "resolved": "https://registry.npmjs.org/clean-css/-/clean-css-5.3.2.tgz",
+@@ -22745,6 +22997,11 @@
+       "resolved": "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz",
+       "integrity": "sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg=="
+     },
++    "eve": {
++      "version": "0.5.4",
++      "resolved": "https://registry.npmjs.org/eve/-/eve-0.5.4.tgz",
++      "integrity": "sha512-aqprQ9MAOh1t66PrHxDFmMXPlgNO6Uv1uqvxmwjprQV50jaQ2RqO7O1neY4PJwC+hMnkyMDphu2AQPOPZdjQog=="
++    },
+     "eventemitter3": {
+       "version": "4.0.7",
+       "resolved": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz",
+@@ -27219,6 +27476,18 @@
+         "whatwg-fetch": "^3.6.2"
+       }
+     },
++    "react-burger-menu": {
++      "version": "3.0.9",
++      "resolved": "https://registry.npmjs.org/react-burger-menu/-/react-burger-menu-3.0.9.tgz",
++      "integrity": "sha512-Qy15hkCxwxNEKfqdAv43F+8ZSl+/c6KkqrBwGP0CesFYJ02onHtiUFUbuhSWCMtBH8/n0HhfekFlp/NyCdKYzQ==",
++      "requires": {
++        "browserify-optional": "^1.0.0",
++        "classnames": "^2.2.6",
++        "eve": "~0.5.1",
++        "prop-types": "^15.7.2",
++        "snapsvg-cjs": "0.0.6"
++      }
++    },
+     "react-dev-utils": {
+       "version": "12.0.1",
+       "resolved": "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-12.0.1.tgz",
+@@ -27937,6 +28206,22 @@
+       "resolved": "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz",
+       "integrity": "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
+     },
++    "snapsvg": {
++      "version": "0.5.1",
++      "resolved": "https://registry.npmjs.org/snapsvg/-/snapsvg-0.5.1.tgz",
++      "integrity": "sha512-CjwWYsL7+CCk1vCk9BBKGYS4WJVDfJAOMWU+Zhzf8wf6pAm/xT34wnpaMPAgcgCNkxuU6OkQPPd8wGuRCY9aNw==",
++      "requires": {
++        "eve": "~0.5.1"
++      }
++    },
++    "snapsvg-cjs": {
++      "version": "0.0.6",
++      "resolved": "https://registry.npmjs.org/snapsvg-cjs/-/snapsvg-cjs-0.0.6.tgz",
++      "integrity": "sha512-7NNvoGrc3BQvWz5rWK1DsD5/Vni4STswz5B3JrBADboQWcN8OBVGjYVJFPT5JkUXb2iVnEflZANhufEpEcTHXw==",
++      "requires": {
++        "snapsvg": "0.5.1"
++      }
++    },
+     "sockjs": {
+       "version": "0.3.24",
+       "resolved": "https://registry.npmjs.org/sockjs/-/sockjs-0.3.24.tgz",
+@@ -28499,6 +28784,11 @@
+       "resolved": "https://registry.npmjs.org/throat/-/throat-6.0.2.tgz",
+       "integrity": "sha512-WKexMoJj3vEuK0yFEapj8y64V0A6xcuPuK9Gt1d0R+dzCSJc0lHqQytAbSB4cDAK0dWh4T0E2ETkoLE2WZ41OQ=="
+     },
++    "through": {
++      "version": "2.3.8",
++      "resolved": "https://registry.npmjs.org/through/-/through-2.3.8.tgz",
++      "integrity": "sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg=="
++    },
+     "thunky": {
+       "version": "1.1.0",
+       "resolved": "https://registry.npmjs.org/thunky/-/thunky-1.1.0.tgz",
