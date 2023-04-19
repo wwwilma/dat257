@@ -1,3 +1,4 @@
+/*
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
@@ -32,3 +33,16 @@ function Button(){
 }
 
 export default App;
+*/
+import CardGrid from "./CardGrid";
+
+function App() {
+    return (
+        <div className="App">
+            <CardGrid   />
+        </div>
+    );
+}
+
+export default App;
+
