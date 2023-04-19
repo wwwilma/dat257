@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./Card.css";
-//Card component for the tasks
+
+// Card component for the tasks.
 export default function Card({ imgSrc, title} ) {
     const cardRef = useRef(null);
     const imgRef = useRef(null);
@@ -10,11 +11,12 @@ export default function Card({ imgSrc, title} ) {
     //constant for counting the button clicks
     const [count, setCount] = useState(0);
 
-    //Function for handle click on card
+    // Function for handle click on card.
     function handleClickCard() {
         console.log('Card clicked');
     }
-    //function for handle the clicks on the done button
+
+    // Function where the counter increments with 1, every time the card is clicked.
     function handleClickDone() {
         setCount(count + 1);
     }
