@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Statistics from './pages/Statistics';
 import Menu from './Menu';
+import CardGrid from "./CardGrid";
 
 export default function App() {
   return (
