@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import logo from './img/Track_log.png'
+import logo from './img/TRACK_logo.png'
 
 
 function Header() {
