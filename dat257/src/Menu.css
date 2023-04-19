@@ -1,0 +1,79 @@
+/*From documentation: https://www.npmjs.com/package/react-burger-menu */
+/*Position and size of burger button*/
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+}
+
+/*Color of burger icon bars*/
+.bm-burger-bars {
+    background: #000000; /*svart*/
+}
+
+/*Color of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #555555; /*grå*/
+}
+
+/*Position and size of cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/*Color of cross button*/
+.bm-cross {
+    background: #cccccc; /*ljusgrå*/
+}
+
+/*Sidebar wrapper styles*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/*Sidebar styles*/
+.bm-menu {
+    background: #7DAC88; /*grön?*/
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad; /*b8b7ad*/
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/*Individual item in sidebar*/
+.bm-item {
+    display: inline-block;
+    color: #eeeeee; /*ljusgrå*/
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/*Color of sidebar items on hover*/
+.bm-item:hover {
+    color: #bbbbbb; /*grå samma som hover på burger*/
+}
