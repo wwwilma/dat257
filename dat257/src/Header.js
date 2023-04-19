@@ -1,11 +1,17 @@
 import React from 'react'
 import './Header.css'
+import logo from './img/Track_logo.png'
 
 
 function Header() {
     return (
         <div className="Header">
-            <h1>TRACK fast bild</h1>
+            <img src={logo} className="App-logo" alt="logo"
+                 style={{
+                     width: 250,
+                     height: 59
+                 }}
+            />
         </div>
 
     )
