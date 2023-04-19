@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dat257/src/img/TRACK.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-19_09_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-19_09_53__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Header.js" afterDir="false" />
-    </list>
+    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="loggan fungerar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="005Logo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,6 +83,13 @@
       <workItem from="1681809842119" duration="1900000" />
       <workItem from="1681886683430" duration="2304000" />
     </task>
+    <task id="LOCAL−00001" summary="loggan fungerar">
+      <created>1681916269811</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1681916269811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +97,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ska ta bort den här branchen" />
-    <option name="LAST_COMMIT_MESSAGE" value="ska ta bort den här branchen" />
+    <MESSAGE value="loggan fungerar" />
+    <option name="LAST_COMMIT_MESSAGE" value="loggan fungerar" />
   </component>
 </project>
