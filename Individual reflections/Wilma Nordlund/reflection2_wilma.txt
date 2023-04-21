@@ -1,0 +1,10 @@
+Individual Reflection 2
+
+This week we have worked with a bigger number of user stories in the sprint.
+This means everyone had something more specific to do, and we got a lot of work done.
+I had responsibility over the implementation of the card class, so that there can be multiple cards on the site.
+Kristin was already working with the cards in her user story, so our work was related.
+We worked together with the last documentation of the code, and then handled a few merging conflicts in the repository.
+I like this way of working, and it's something that I've missed in previous group projects.
+It's good to break the end goal down into a lot of smaller parts, so the work doesn't feel overwhelming.
+It is a interesting way of working and I look forward to the coming weeks.
