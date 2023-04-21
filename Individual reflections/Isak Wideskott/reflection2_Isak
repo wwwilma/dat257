@@ -1,0 +1,8 @@
+My goal this week was to develop the design of the website, but I instead took on the challange to develop a database for the project. To do this i had to research
+what type of database that were to be used. I decided on CrateDB with postgreSQL. I also had to get an understanding on how this could be used for the product so I
+developed my own side project to test its functionality and what other compontents need to be created to get it to work.
+
+What I learnt this week is nothing is as simple as it seems, something that you tink might be an easy task get more difficult
+when made to work with something already exsitning project.
+
+Next week I wish to implement the created database and teach the rest of the group how the database works and how they also can implement it.
