@@ -1,0 +1,5 @@
+This week I was Product Owner and I think it went well, my opinions on the priorities of the items in the backlog aligned with 
+my other team members opinions so that felt good. On my own I feel like I learnt more about javascript and react as I wanted to last week. 
+I contributed to the project by creating new pages and the routing for them which was fun. The project has progressed quite a bit compared to 
+what we had last week so I'm really looking forward to see what happens to the project next week. Everyone is getting more comfortable with react 
+and it'll be exciting to see which ideas the group can think of now that we all know more about how much we can contribute during a week.
