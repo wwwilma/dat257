@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="loggan fungerar">
+    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dat257/src/img/Track_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dat257/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/src/img/TRACK_logo.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="005Logo" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,11 +60,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pauli\IdeaProjects\dat257\dat257\src\img" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/dat257/package.json" />
@@ -86,38 +82,9 @@
       <workItem from="1681809842119" duration="1900000" />
       <workItem from="1681886683430" duration="2304000" />
     </task>
-    <task id="LOCAL−00001" summary="loggan fungerar">
-      <created>1681916269811</created>
-      <option name="number" value="LOCAL−00001" />
-      <option name="presentableId" value="LOCAL−00001" />
-      <updated>1681916269811</updated>
-    </task>
-    <task id="LOCAL−00002" summary="loggan fungerar">
-      <created>1681916577896</created>
-      <option name="number" value="LOCAL−00002" />
-      <option name="presentableId" value="LOCAL−00002" />
-      <updated>1681916577896</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="ska ta bort den här branchen" />
-    <MESSAGE value="loggan fungerar" />
-    <option name="LAST_COMMIT_MESSAGE" value="loggan fungerar" />
   </component>
 </project>
