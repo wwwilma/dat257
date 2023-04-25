@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dat257/src/img/Track_logo.png" afterDir="false" />
+    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="paow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat257/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/src/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/src/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Card.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,5 +86,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="paow" />
+    <option name="LAST_COMMIT_MESSAGE" value="paow" />
   </component>
 </project>

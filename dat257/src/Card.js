@@ -27,23 +27,38 @@ export default function Card({ imgSrc, title} ) {
             ref={cardRef}
             onClick={handleClickCard}
         >
-            <img
-                ref={imgRef}
-                src={imgSrc}
-                alt="task-img"
-                className="task-img"
-            />
-            <h1 className="title" ref={titleRef}>
-                {title}
-            </h1>
-            <div className="button-box" ref={doneRef}>
-                <h1 className="timesDone" ref={timesDoneRef}>
-                    {count} times
+            <div
+                className="theFront"
+                ref={cardRef}
+            >
+                <img
+                    ref={imgRef}
+                    src={imgSrc}
+                    alt="task-img"
+                    className="task-img"
+                />
+                <h1 className="title" ref={titleRef}>
+                    {title}
                 </h1>
-                <button className="done" onClick={handleClickDone} >
-                    Done
-                </button>
+                <div className="button-box" ref={doneRef}>
+                    <h1 className="timesDone" ref={timesDoneRef}>
+                        {count} times
+                    </h1>
+                    <button className="done" onClick={handleClickDone} >
+                        Done
+                    </button>
+                </div>
+            </div>
+
+            <div
+                className="theBack"
+                ref={cardRef}
+            >
+
             </div>
         </div>
     );
+
+
+
 }

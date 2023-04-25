@@ -12,27 +12,47 @@
 }
 .card {
     transform-style: preserve-3d;
-    border: 3px solid black;
     position: relative;
     padding: 25px;
     width: 130px;
     height: 250px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
+    transition: all 0.5s ease;
+}
+
+.thefront{
+    position: relative;
+    width: 130px;
+    height: 250px;
+    backface-visibility: hidden;
+    color: #333;
     background: linear-gradient(
             25deg,
             rgb(53, 98, 118) 0%,
             rgb(55, 100, 110) 86%
     );
-    transition: all 0.1s ease;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    border: 3px solid black;
 }
+
+.theback{
+    position: relative;
+    width: 130px;
+    height: 250px;
+    backface-visibility: hidden;
+    background: #ffc728;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
 .card:hover{
     background-color: lightgray;
     cursor: pointer;
+    transform: rotateY(180deg);
 }
 .task-img {
     height: 50px;
@@ -80,3 +100,5 @@
     font-size: 15px;
     color: rgb(220, 220, 220);
 }
+
+
