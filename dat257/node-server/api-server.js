@@ -17,8 +17,8 @@ app.use(function (req, res, next) {
     next(); // Proceed to the next middleware
 });
 
-// Define the GET '/users' endpoint
-// This endpoint retrieves all users in the database
+// Define the GET '/users'
+// This retrieves all users in the database
 app.get('/users', (req, res) => {
     getUsers()
         .then(response => {
