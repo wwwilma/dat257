@@ -3,11 +3,14 @@ import './Menu.css';
 import React from 'react';
 
 /*function for the sidebar and its items*/
-function props(){
+function props(userID){
     return (
         <Menu right
             isOpen={ false }>
             <a className="menu-item" href="/">
+                All Users
+            </a>
+            <a className="menu-item" href="/Home">
                 Home
             </a>
             <a className="menu-item" href="/statistics">

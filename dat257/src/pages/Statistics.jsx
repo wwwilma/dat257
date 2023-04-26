@@ -1,6 +1,7 @@
 import React from "react";
 
-function Statistics() {
+function Statistics({userID}) {
+    console.log(userID)
     return (
         <div>
             Welcome to the Statistics page.

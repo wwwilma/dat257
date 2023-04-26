@@ -1,17 +1,23 @@
-.container {
-    position: relative;
-    width: 100%;
+.containerLogin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
     height: 10vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background: rgba(250, 249, 252, 0.01);
     font-family: "Roboto", sans-serif;
     gap: 5px;
+    flex-direction: row;
 }
 .userNameBtn {
     cursor: pointer;
-    width: 10%;
+    width: 20%;
+    height: 20px;
     border-radius: 30px;
     padding: 0.8rem 1.5rem;
     font-weight: bold;
@@ -19,6 +25,7 @@
     font-size: 1rem;
     letter-spacing: 1px;
     background-color: rgba(45, 80, 40, 0.82);
+    text-align: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

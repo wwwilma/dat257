@@ -26,7 +26,21 @@ const getUsers = () => {
         });
 };
 
+// getUserName function that retrieves a users name from database
+const getUserName = (userId) => {
+    return crateClient
+        .query(`SELECT name FROM database.users WHERE id = ${userId};`)
+        .then((res) => {
+            return res.rows;
+        })
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+};
+
 // Export the functions, so they can be used by other modules
 module.exports = {
     getUsers: getUsers,
+    getUserName: getUserName,
 };

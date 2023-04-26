@@ -1,6 +1,6 @@
 // Import necessary dependencies
 const express = require('express');
-const {getUsers} = require('./database-connection');
+const {getUsers, getUserName} = require('./database-connection');
 
 // Create an Express app
 const app = express();
@@ -21,6 +21,19 @@ app.use(function (req, res, next) {
 // This retrieves all users in the database
 app.get('/users', (req, res) => {
     getUsers()
+        .then(response => {
+            res.status(200).send(response);
+        })
+        .catch(error => {
+            res.status(500).send(error);
+        });
+});
+
+// Define the GET '/users/:userID'
+// This retrieves a specified users name in the database
+app.get('/users/:userID', (req, res) => {
+    const userId = req.params.userID; // Extract the user ID from the request parameters
+    getUserName(userId)
         .then(response => {
             res.status(200).send(response);
         })
