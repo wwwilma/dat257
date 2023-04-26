@@ -51,6 +51,7 @@ const Heatmap = () => {
             <HeatMap
                 value={value1}
                 startDate={new Date('2022/12/31')}
+                endDate={new Date()}
                 style={{ color: '#35524A' }}
                 monthLabels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']}
                 panelColors={{
