@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="paow">
+    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="dirts try on rotating the card">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dat257/src/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Card.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dat257/src/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Card.js" afterDir="false" />
@@ -81,7 +83,15 @@
       <workItem from="1681807723333" duration="2065000" />
       <workItem from="1681809842119" duration="1900000" />
       <workItem from="1681886683430" duration="2304000" />
+      <workItem from="1682493124218" duration="4448000" />
     </task>
+    <task id="LOCAL−00001" summary="dirts try on rotating the card">
+      <created>1682435372362</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1682435372362</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="paow" />
-    <option name="LAST_COMMIT_MESSAGE" value="paow" />
+    <MESSAGE value="dirts try on rotating the card" />
+    <option name="LAST_COMMIT_MESSAGE" value="dirts try on rotating the card" />
   </component>
 </project>
