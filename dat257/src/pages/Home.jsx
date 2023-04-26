@@ -6,7 +6,7 @@ import axios from "axios";
 function Home({userID}) {
     const [userName, setUserName] = useState('{User_Name}');
 
-    //When home is loaded it will retrive the selected users name from the database
+    //When home is loaded it will retrieve the selected users name from the database
     useEffect(() => {
             getUserName(userID);
     }, [userID]);
