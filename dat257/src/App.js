@@ -5,15 +5,15 @@ import Statistics from './pages/Statistics';
 import Login from './pages/Login'
 import Menu from './Menu';
 import Header from "./Header";
-import React, {useState} from "react";
 import Footer from "./Footer";
+import {useState} from "react";
 
 export default function App() {
-    const [userId, setUserId] = useState([]);
-    const [userName, setUserName] = useState([]);
+    const [userID, setUserID] = useState(0);
 
-    function handleUserChange(){
-
+    function HandleUserChange(newUserID){
+        setUserID(newUserID)
+        console.log(userID)
     }
 
   return (
@@ -23,7 +23,7 @@ export default function App() {
           <Header />
           <Footer />
       <Routes>
-        <Route exact path="/" element={<Login/>} />
+        <Route exact path="/" element={<Login onUserChange={HandleUserChange}/>} />
         <Route path="/statistics" element={<Statistics/>} />
         <Route path="/login" element={<Home/>} />
       </Routes>

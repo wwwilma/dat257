@@ -16,7 +16,7 @@ crateClient.connect();
 // getUsers function that retrieves users from database
 const getUsers = () => {
     return crateClient
-        .query("SELECT id, name FROM database.users;")
+        .query("SELECT id, name FROM database.users ORDER BY id;")
         .then((res) => {
             return res.rows;
         })
