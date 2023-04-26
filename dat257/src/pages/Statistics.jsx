@@ -1,9 +1,11 @@
 import React from "react";
+import Heatmap from '../Heatmap';
 
+//Statistics page
 function Statistics() {
     return (
         <div>
-            Welcome to the Statistics page.
+            <Heatmap />
         </div>
     )
 }
