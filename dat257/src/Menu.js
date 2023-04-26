@@ -1,29 +1,30 @@
 import { slide as Menu } from 'react-burger-menu'
 import './Menu.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 /*function for the sidebar and its items*/
-function props(userID){
+function MenuComponent() {
     return (
         <Menu right
-            isOpen={ false }>
-            <a className="menu-item" href="/">
+              isOpen={ false }>
+            <Link className="menu-item" to="/">
                 All Users
-            </a>
-            <a className="menu-item" href="/Home">
+            </Link>
+            <Link className="menu-item" to="/Home">
                 Home
-            </a>
-            <a className="menu-item" href="/statistics">
+            </Link>
+            <Link className="menu-item" to="/statistics">
                 Statistics
-            </a>
-            <a className="menu-item" href="/information">
+            </Link>
+            <Link className="menu-item" to="/information">
                 Information
-            </a>
-            <a className="menu-item" href="/about-us">
+            </Link>
+            <Link className="menu-item" to="/about-us">
                 About Us
-            </a>
+            </Link>
         </Menu>
     );
 }
 
-export default props;
+export default MenuComponent;
