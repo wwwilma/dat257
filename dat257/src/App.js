@@ -5,10 +5,17 @@ import Statistics from './pages/Statistics';
 import Login from './pages/Login'
 import Menu from './Menu';
 import Header from "./Header";
-import React from "react";
+import React, {useState} from "react";
 import Footer from "./Footer";
 
 export default function App() {
+    const [userId, setUserId] = useState([]);
+    const [userName, setUserName] = useState([]);
+
+    function handleUserChange(){
+
+    }
+
   return (
     <BrowserRouter>
       <div>

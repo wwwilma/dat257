@@ -2,21 +2,18 @@ import React, { useRef} from "react";
 import "./Login.css";
 
 // Card component for the tasks.
-export default function LoginBtn({ user } ) {
+export default function LoginBtn({ users } ) {
     const userNameRef = useRef(null);
 
-        function handleClick() {
-    }
 
     return (
-        <div
-            className= "container">
-            <h1
+        <div className= "container">
+            {users.map(user => (
+            <h1 key={user.id}
                 className="userNameBtn"
-                ref={userNameRef}
-                onClick={handleClick}>
-                name
-            </h1>
+                ref={userNameRef}>
+                {user.name}
+            </h1>))}
         </div>
     );
 }
