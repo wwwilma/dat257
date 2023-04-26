@@ -21,6 +21,7 @@ export default function Card({ imgSrc, title} ) {
         setCount(count + 1);
     }
 
+
     return (
         <div
             className="card"
@@ -36,12 +37,13 @@ export default function Card({ imgSrc, title} ) {
             <h1 className="title" ref={titleRef}>
                 {title}
             </h1>
+            <h1 className="timesDone" ref={timesDoneRef}>
+                {count} times
+            </h1>
             <div className="button-box" ref={doneRef}>
-                <h1 className="timesDone" ref={timesDoneRef}>
-                    {count} times
-                </h1>
                 <button className="done" onClick={handleClickDone} >
                     Done
+
                 </button>
             </div>
         </div>
