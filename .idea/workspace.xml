@@ -7,6 +7,7 @@
     <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="rotation works, the y-axis is a bit off">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dat257/src/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat257/src/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Card.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

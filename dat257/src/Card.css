@@ -7,12 +7,13 @@
     justify-content: center;
     background: none;
     font-family: "Roboto", sans-serif;
+    gap: 100px;
 }
 
 /* Card design */
 .card {
     transform-style: preserve-3d;
-    position: absolute;
+    position: relative;
     width: 130px;
     height: 250px;
     transition: all 0.5s ease;
@@ -44,10 +45,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
     padding: 25px;
     border: 3px solid black;
     transform: rotateY(180deg);
-
 }
 
 /* Hoover effect for done button */
