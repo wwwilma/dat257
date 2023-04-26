@@ -50,7 +50,7 @@ const Heatmap = () => {
             <h3>Yearly statistics (example)</h3>
             <HeatMap
                 value={value1}
-                startDate={new Date('2023/01/01')}
+                startDate={new Date('2022/12/31')}
                 style={{ color: '#35524A' }}
                 monthLabels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']}
                 panelColors={{
