@@ -7,6 +7,7 @@ import CardGrid from "./CardGrid";
 import Header from "./Header";
 import React from "react";
 import Footer from "./Footer";
+import AllHabits from "./pages/AllHabits";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route path="/statistics" element={<Statistics/>} />
+        <Route path="/allhabits" element={<AllHabits/>} />
       </Routes>
       </div>
     </BrowserRouter>

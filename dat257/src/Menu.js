@@ -10,6 +10,9 @@ function props(){
             <a className="menu-item" href="/">
                 Home
             </a>
+            <a className="menu-item" href="/allhabits">
+                All Habits
+            </a>
             <a className="menu-item" href="/statistics">
                 Statistics
             </a>
