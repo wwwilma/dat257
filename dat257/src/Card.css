@@ -7,32 +7,57 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: none;
     font-family: "Roboto", sans-serif;
-    gap: 5px;
+    gap: 80px;
+    flex-wrap: wrap;
 }
 
 /* Card design */
 .card {
     transform-style: preserve-3d;
-    border: #304B33 2px solid;
     position: relative;
-    padding: 25px;
+    width: 180px;
+    height: 300px;
+    transition: all 0.5s ease;
+}
+
+.thefront{
+    position: absolute;
     width: 130px;
     height: 250px;
+    backface-visibility: hidden;
+    background: #3A5A40;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: #304B33 2px solid;
+    padding: 25px;
+}
+
+.theback{
+    position: absolute;
+    width: 130px;
+    height: 250px;
+    backface-visibility: hidden;
+    background: #3A5A40;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    background: #3A5A40;
+    border: #304B33 2px solid;
+    transform: rotateY(180deg);
+    padding: 25px;
     transition: all 0.1s ease;
 }
 
 /* Hoover effect for done button */
 .card:hover{
-    background-color: #304B33;
-    cursor: pointer;
+    transform: rotateY(180deg);
 }
 
 /* Image on the card */
@@ -72,10 +97,10 @@
 .done {
     cursor: pointer;
     width: 100%;
-    border: #645940 1px solid;
     border-radius: 30px;
     padding: 0.8rem 1.5rem;
     font-weight: bold;
+    border: #645940 1px solid;
     font-size: 1rem;
     letter-spacing: 1px;
     transition-duration: 0.4s;
