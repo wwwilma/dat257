@@ -7,6 +7,7 @@ import Menu from './Menu';
 import Header from "./Header";
 import Footer from "./Footer";
 import { useState } from "react";
+import AllHabits from "./pages/AllHabits";
 
 export default function App() {
     const [userID, setUserID] = useState(0);
@@ -25,6 +26,7 @@ export default function App() {
                     <Route exact path="/" element={<Login onUserChange={handleUserChange} userID = {userID}/>}/>
                     <Route path="/statistics" element={<Statistics userID = {userID}/>} />
                     <Route path="/Home" element={<Home userID = {userID}/>} />
+                    <Route path="/allhabits" element={<AllHabits/>} />
                 </Routes>
             </div>
         </BrowserRouter>

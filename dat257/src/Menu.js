@@ -14,6 +14,9 @@ function MenuComponent() {
             <Link className="menu-item" to="/Home">
                 Home
             </Link>
+            <Link className="menu-item" to="/allhabits">
+                All Habits
+            </Link>
             <Link className="menu-item" to="/statistics">
                 Statistics
             </Link>
