@@ -1,0 +1,5 @@
+This week I had two smaller user stories, one that said the button should visually be pressed down and one that said there should be a color theme on
+the website. Both user stories went quite well, altough I had some smaller problems that made the design not exacly how I thoght it would end up like. 
+The button is only working when I press down my mouse, but not using touch on the touchpad, altough this works on other computers in the group so it
+will work for now. The footer follows the bottom of the page when scrolling which we dont want, I tried many tutorials but did not come up with a solution.
+Hopefully this will work in the future! So long I have done a lot of work with the css, so next week I am looking forward to doing more with functionality!
