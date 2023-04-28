@@ -57,8 +57,6 @@
 
 /* Hoover effect for done button */
 .card:hover{
-    background-color: #304B33;
-    cursor: pointer;
     transform: rotateY(180deg);
 }
 
