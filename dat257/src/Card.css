@@ -14,15 +14,15 @@
 .card {
     transform-style: preserve-3d;
     position: relative;
-    width: 130px;
-    height: 250px;
+    width: 180px;
+    height: 300px;
     transition: all 0.5s ease;
 }
 
 .thefront{
     position: absolute;
-    width: 130px;
-    height: 250px;
+    width: 180px;
+    height: 300px;
     backface-visibility: hidden;
     background: green;
     border-radius: 20px;
@@ -30,14 +30,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 25px;
     border: 3px solid black;
 }
 
 .theback{
     position: absolute;
-    width: 130px;
-    height: 250px;
+    width: 180px;
+    height: 300px;
     backface-visibility: hidden;
     background: hotpink;
     border-radius: 20px;
@@ -46,7 +45,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    padding: 25px;
     border: 3px solid black;
     transform: rotateY(180deg);
 }
