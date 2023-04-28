@@ -1,3 +1,5 @@
+
+/*  */
 .container {
     position: relative;
     width: 100%;
@@ -25,13 +27,13 @@
     width: 130px;
     height: 250px;
     backface-visibility: hidden;
-    background: green;
+    background: #3A5A40;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 3px solid black;
+    border: #304B33 2px solid;
     padding: 25px;
 }
 
@@ -40,20 +42,23 @@
     width: 130px;
     height: 250px;
     backface-visibility: hidden;
-    background: hotpink;
+    background: #3A5A40;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    border: 3px solid black;
+    border: #304B33 2px solid;
     transform: rotateY(180deg);
     padding: 25px;
+    transition: all 0.1s ease;
 }
 
 /* Hoover effect for done button */
 .card:hover{
+    background-color: #304B33;
+    cursor: pointer;
     transform: rotateY(180deg);
 }
 
@@ -97,19 +102,19 @@
     border-radius: 30px;
     padding: 0.8rem 1.5rem;
     font-weight: bold;
-    border: none;
+    border: #645940 1px solid;
     font-size: 1rem;
     letter-spacing: 1px;
     transition-duration: 0.4s;
-    background-color: #936639;
+    background-color: #897C58;
     color: white;
-    box-shadow: 0 5px #999;
+    box-shadow: 0 4px #7C7050;
     touch-action: initial;
 }
 
 /* Hoover effect for done button */
 .done:hover {
-    background-color: #582F0E;
+    background-color: #645940;
     color: white;
 }
 

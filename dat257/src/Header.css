@@ -5,8 +5,9 @@
     display: flex;
     justify-content: left;
     align-items: baseline;
-    padding: 1em;
+    padding: 1.5em;
     margin-bottom: 2em;
-    background-color: #7DAC88;
-    color: #373a47;
+    border-bottom: #EFEDE6 solid 2px;
+    background-color: #507C58;
+    color: #656D4A;
 }
