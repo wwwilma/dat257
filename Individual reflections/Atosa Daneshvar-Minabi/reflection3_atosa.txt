@@ -1,0 +1,6 @@
+This week has gone well! The group haven't run into any difficult problems as of yet besides a few merge conflicts. 
+I contributed to making the statistics page this week by implementing calendars that shows how many times the buttons 
+have been pushed each day with the help of a heatmap. It was very fun and I learnt a lot of new things as I hadn't done anything 
+similar before, but the colors of the calendars could be improved. The difference in the app is quite big compared to what we
+started with and it is progressing really well so I'm looking forward to next week, especially when we get to integrate the 
+database with the calendars as I've hardcoded the data as of now. 
