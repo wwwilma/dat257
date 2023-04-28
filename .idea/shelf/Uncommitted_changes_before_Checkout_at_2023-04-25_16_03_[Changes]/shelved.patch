@@ -1,0 +1,147 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31__Changes_.xml	(revision d6389c823e7f50003bf4888da5aadfb49a726017)
++++ /dev/null	(revision d6389c823e7f50003bf4888da5aadfb49a726017)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_2023-04-13_08_31_[Changes]" date="1681367511051" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2023-04-13 08:31 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31_[Changes]/shelved.patch	(revision d6389c823e7f50003bf4888da5aadfb49a726017)
++++ /dev/null	(revision d6389c823e7f50003bf4888da5aadfb49a726017)
+@@ -1,69 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"last_opened_file_path\" value=\"$USER_HOME$/Documents/GitHub/Lab/Lab_1\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 946dbde05b5db71da91545b0831954760b4150f9)
+-+++ b/.idea/workspace.xml	(date 1681293125735)
+-@@ -1,10 +1,55 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-+  <component name="AutoImportSettings">
+-+    <option name="autoReloadType" value="SELECTIVE" />
+-+  </component>
+-+  <component name="ChangeListManager">
+-+    <list default="true" id="5f99090d-784c-400c-bd40-e6d825b11149" name="Changes" comment="">
+-+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+    </list>
+-+    <option name="SHOW_DIALOG" value="false" />
+-+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-+    <option name="LAST_RESOLUTION" value="IGNORE" />
+-+  </component>
+-+  <component name="Git.Settings">
+-+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-+  </component>
+-+  <component name="MarkdownSettingsMigration">
+-+    <option name="stateVersion" value="1" />
+-+  </component>
+-+  <component name="ProjectId" id="2OJsCTQDWMUZ6xtkQ4NTp7N9N8a" />
+-+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+-   <component name="ProjectViewState">
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent">
+--    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/Lab/Lab_1" />
+-+  <component name="PropertiesComponent"><![CDATA[{
+-+  "keyToString": {
+-+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-+    "RunOnceActivity.ShowReadmeOnStart": "true",
+-+    "WebServerToolWindowFactoryState": "false",
+-+    "node.js.detected.package.eslint": "true",
+-+    "node.js.detected.package.tslint": "true",
+-+    "node.js.selected.package.eslint": "(autodetect)",
+-+    "node.js.selected.package.tslint": "(autodetect)",
+-+    "nodejs_package_manager_path": "npm",
+-+    "vue.rearranger.settings.migration": "true"
+-+  }
+-+}]]></component>
+-+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-+  <component name="TaskManager">
+-+    <task active="true" id="Default" summary="Default task">
+-+      <changelist id="5f99090d-784c-400c-bd40-e6d825b11149" name="Changes" comment="" />
+-+      <created>1681289894283</created>
+-+      <option name="number" value="Default" />
+-+      <option name="presentableId" value="Default" />
+-+      <updated>1681289894283</updated>
+-+      <workItem from="1681289895632" duration="2684000" />
+-+    </task>
+-+    <servers />
+-+  </component>
+-+  <component name="TypeScriptGeneratedFilesManager">
+-+    <option name="version" value="3" />
+-   </component>
+- </project>
+-\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"55bbd33a-ad8d-4476-9326-6b41098fb11d\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/dat257/src/img/Track_logo.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dat257/src/Header.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dat257/src/Header.js\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Pull.Settings\">\r\n    <option name=\"OPTIONS\">\r\n      <set>\r\n        <option value=\"REBASE\" />\r\n      </set>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2OJwOqYnn5AqmIzdfOgt2cB1btZ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"npm start\" type=\"js.build_tools.npm\">\r\n      <package-json value=\"$PROJECT_DIR$/dat257/package.json\" />\r\n      <command value=\"start\" />\r\n      <node-interpreter value=\"project\" />\r\n      <envs />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"55bbd33a-ad8d-4476-9326-6b41098fb11d\" name=\"Changes\" comment=\"\" />\r\n      <created>1681291967880</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1681291967880</updated>\r\n      <workItem from=\"1681291969125\" duration=\"429000\" />\r\n      <workItem from=\"1681807723333\" duration=\"2065000\" />\r\n      <workItem from=\"1681809842119\" duration=\"1900000\" />\r\n      <workItem from=\"1681886683430\" duration=\"2304000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d6389c823e7f50003bf4888da5aadfb49a726017)
++++ b/.idea/workspace.xml	(date 1682431275065)
+@@ -4,10 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/dat257/src/img/Track_logo.png" afterDir="false" />
++    <list default="true" id="55bbd33a-ad8d-4476-9326-6b41098fb11d" name="Changes" comment="Logo fungerar och ser bra ut">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-13_08_31_[Changes]/shelved.patch" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dat257/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/dat257/src/Header.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -60,6 +59,11 @@
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
++  <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\pauli\IdeaProjects\dat257\dat257\src\img" />
++    </key>
++  </component>
+   <component name="RunManager">
+     <configuration name="npm start" type="js.build_tools.npm">
+       <package-json value="$PROJECT_DIR$/dat257/package.json" />
+@@ -81,10 +85,22 @@
+       <workItem from="1681807723333" duration="2065000" />
+       <workItem from="1681809842119" duration="1900000" />
+       <workItem from="1681886683430" duration="2304000" />
++      <workItem from="1682431273337" duration="2000" />
+     </task>
++    <task id="LOCAL−00001" summary="Logo fungerar och ser bra ut">
++      <created>1681919048250</created>
++      <option name="number" value="LOCAL−00001" />
++      <option name="presentableId" value="LOCAL−00001" />
++      <updated>1681919048250</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Logo fungerar och ser bra ut" />
++    <option name="LAST_COMMIT_MESSAGE" value="Logo fungerar och ser bra ut" />
++  </component>
+ </project>
+\ No newline at end of file
