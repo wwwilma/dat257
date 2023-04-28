@@ -1,0 +1,11 @@
+Individual Reflection 3
+
+This week we have done a lot of progress in our project. The site looks very different from last week.
+My focus have been on the standard view of the program. 
+This means I've done some research to be able to choose 10 habits that will be the standard view.
+These 10 habits will be default, our goal is to enable a function that lets the user choose what habits should be tracked.
+In addition to the selection of 10 standard habits, I have also decided upon what icons to choose for the cards.
+I took some time to decide upon how to implement the icons on the cards, locally or globally.
+Now, the standard view has 10 cards with habits and their icons.
+Next week, my goal will be to work even more divided between different days.
+Even though I've tried to work in small amounts but often, I still feel that I work in too big chunks.
