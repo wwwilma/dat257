@@ -1,0 +1,6 @@
+This week I wanted to implement the created database, this was achieved by creating an api-server within the project that could handle json documents 
+sent from the database. By doing this, we could add a user system. Now when selected you will recive a personal greeting when logging in to the application. 
+
+This week I tried out pair programming with Kristin, it worked well where we both could share our knowledge and create an ever better solution together.
+
+Next week i would like to keep expanding the backend and get more implementations into the fron-end, and also share more of my views on the design of the product.
