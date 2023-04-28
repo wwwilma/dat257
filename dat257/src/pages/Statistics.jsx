@@ -1,8 +1,8 @@
 import React from "react";
 import Heatmap from '../Heatmap';
 
-//Statistics page
-function Statistics() {
+function Statistics({userID}) {
+    console.log(userID)
     return (
         <div>
             <Heatmap />
