@@ -16,7 +16,7 @@ import faSocks from "./img/socks-solid.svg"
 export default function CardGrid() {
     const cardData = [
         {
-            imgRef: faTeethOpen,
+            imgSrc: faTeethOpen,
             title: "Turning off the water when brushing your teeth.",
         },
         {
