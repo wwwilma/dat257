@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "./Card.css";
 
 // Card component for the tasks.
-export default function Card({ imgSrc, title} ) {
+export default function Card({ imgSrc, title, desc,link} ) {
     const cardRef = useRef(null);
     const imgRef = useRef(null);
     const titleRef = useRef(null);
@@ -10,6 +10,9 @@ export default function Card({ imgSrc, title} ) {
     const timesDoneRef = useRef(null)
     //constant for counting the button clicks
     const [count, setCount] = useState(0);
+    const descRef = useRef(null);
+    const linkRef = useRef(null);
+
 
     // Function for handle click on card.
     function handleClickCard() {
@@ -40,6 +43,13 @@ export default function Card({ imgSrc, title} ) {
                 <h1 className="title" ref={titleRef}>
                     {title}
                 </h1>
+                <h2 className="desc" ref={descRef}>
+                    {desc}
+                </h2>
+                <h3 className="link" ref={linkRef}>
+                    {link}
+                </h3>
+
 
             </div>
 

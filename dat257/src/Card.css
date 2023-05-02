@@ -73,7 +73,14 @@
     color: rgb(220, 220, 220);
 }
 
-/*  */
+/* Description of the card*/
+.desc{
+    text-align: center;
+    font-size: 10px;
+    color: rgb(220, 220, 220);
+}
+
+/* */
 .card p {
     width: 100%;
     color: rgb(220, 220, 220);
@@ -130,3 +137,10 @@
     font-size: 15px;
     color: rgb(220, 220, 220);
 }
+
+/* hyperlink */
+.link {
+    text-align: center;
+    font-size: 10px;
+}
+
