@@ -24,6 +24,7 @@ export default function CardGrid() {
             imgSrc: faUtensils,
             title: "Saving water during the dish washing by filling up the sink first, and not letting the water run.",
             desc: "By not letting the water run you will contribute to minimizing the waste of one of our most valuable natural resources! Did you know that a running tap gives 6l of water each minute? "
+
         },
         {
             imgSrc: faRecycle,
