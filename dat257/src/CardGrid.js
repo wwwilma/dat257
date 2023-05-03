@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Card from "./Card";
 import "./Card.css";
 import faTeethOpen from "./img/teeth-open-solid.svg";
@@ -11,9 +11,10 @@ import faLightbulb from "./img/lightbulb-solid.svg";
 import faAppleWhole from "./img/apple-whole-solid.svg";
 import faBottleWater from "./img/bottle-water-solid.svg";
 import faSocks from "./img/socks-solid.svg"
+import axios from "axios";
 
 
-export default function CardGrid({cardData}) {
+export default function CardGrid() {
    /* const cardData = [
         {
             imgSrc: faTeethOpen,
@@ -85,9 +86,20 @@ export default function CardGrid({cardData}) {
         },
     ];
 */
+    const [habits, setHabits] = useState([]);
+    useEffect(() => {
+        axios.get(`http://localhost:3001/habits`)
+            .then(response => {
+                setHabits(response.data)
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }, []);
+
     return (
         <div className={"container"}>
-            {cardData.map((card, index) => (
+            {habits.map((card, index) => (
                 <Card
                     key={index}
                     imgSrc={card.imgSrc}

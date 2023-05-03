@@ -41,7 +41,7 @@ const getUserName = (userId) => {
 
 const getAllHabits = () => {
     return crateClient
-        .query("SELECT id, name, description FROM database.habits ORDER BY id;")
+        .query(`SELECT id, name, description FROM database.habits ORDER BY id;`)
         .then((res) => {
             return res.rows;
         })
