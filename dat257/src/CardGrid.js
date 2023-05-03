@@ -1,16 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Card from "./Card";
 import "./Card.css";
-import faTeethOpen from "./img/teeth-open-solid.svg";
-import faUtensils from "./img/utensils-solid.svg";
-import faRecycle from "./img/recycle-solid.svg";
-import faBurger from "./img/burger-solid.svg";
-import faVanShuttle from "./img/van-shuttle-solid.svg";
-import faCarrot from "./img/carrot-solid.svg";
-import faLightbulb from "./img/lightbulb-solid.svg";
-import faAppleWhole from "./img/apple-whole-solid.svg";
-import faBottleWater from "./img/bottle-water-solid.svg";
-import faSocks from "./img/socks-solid.svg"
+
 import axios from "axios";
 
 
@@ -104,6 +95,7 @@ export default function CardGrid() {
                     key={habit.id}
                     title={habit.name}
                     desc={habit.description}
+                    imgSrc = {require(`./img/${habit.id.toString()}.svg`)}
                 />
             ))}
         </div>
