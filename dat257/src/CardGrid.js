@@ -46,7 +46,7 @@ export default function CardGrid() {
             imgSrc: faCarrot,
             title: "Buying an eco friendly food product (or similar), instead of a product that is worse to the environment.",
             desc: "By choosing an eco-friendly product you can contribute to minimize the negative impact on eco-systems. Here is a tip on some certifications to look for:",
-            link: <a href="https://wwwwwfse.cdn.triggerfish.cloud/uploads/2020/02/wwf_certifieringar_2020.pdf">Certifications</a>
+
         },
         {
             imgSrc: faLightbulb,
@@ -78,7 +78,7 @@ export default function CardGrid() {
                     imgSrc={card.imgSrc}
                     title={card.title}
                     desc={card.desc}
-                    link={card.link}
+
                 />
             ))}
         </div>
