@@ -12,27 +12,35 @@ export default function Card({ imgSrc, title, desc,link} ) {
     const [count, setCount] = useState(0);
     const descRef = useRef(null);
     const linkRef = useRef(null);
+    const [style,setStyle] = useState("cardFront")
 
 
     // Function for handle click on card.
-    function handleClickCard() {
+    function handleClickCardFront() {
         console.log('Card clicked');
+        setStyle("cardBack")
+    }
+
+    function handleClickCardBack() {
+        console.log('Card clicked');
+        setStyle("cardFront")
     }
 
     // Function where the counter increments with 1, every time the card is clicked.
-    function handleClickDone() {
+    function handleClickDone(event) {
+        event.stopPropagation();
         setCount(count + 1);
     }
 
     return (
         <div
-            className="card"
+            className={style}
             ref={cardRef}
-            onClick={handleClickCard}
         >
             <div
                 className="thefront"
                 ref={cardRef}
+                onClick={handleClickCardFront}
             >
                 <img
                     ref={imgRef}
@@ -56,6 +64,7 @@ export default function Card({ imgSrc, title, desc,link} ) {
             <div
                 className="theback"
                 ref={cardRef}
+                onClick={handleClickCardBack}
             >
                 <h1 className="timesDone" ref={timesDoneRef}>
                     {count} times
