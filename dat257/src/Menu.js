@@ -23,7 +23,7 @@ function MenuComponent() {
             <Link className="menu-item" to="/information">
                 Information
             </Link>
-            <Link className="menu-item" to="/about-us">
+            <Link className="menu-item" to="/aboutus">
                 About Us
             </Link>
         </Menu>
