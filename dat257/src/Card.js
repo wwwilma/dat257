@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./Card.css";
+import infoIcon from "./img/info-icon.jpg";
+import xIcon from "./img/x-icon.jpg";
 
 // Card component for the tasks.
 export default function Card({ imgSrc, title, desc,link} ) {
@@ -44,6 +46,12 @@ export default function Card({ imgSrc, title, desc,link} ) {
             >
                 <img
                     ref={imgRef}
+                    src={infoIcon}
+                    alt="info-icon"
+                    className="info-icon"
+                />
+                <img
+                    ref={imgRef}
                     src={imgSrc}
                     alt="task-img"
                     className="task-img"
@@ -51,21 +59,6 @@ export default function Card({ imgSrc, title, desc,link} ) {
                 <h1 className="title" ref={titleRef}>
                     {title}
                 </h1>
-                <h2 className="desc" ref={descRef}>
-                    {desc}
-                </h2>
-                <h3 className="link" ref={linkRef}>
-                    {link}
-                </h3>
-
-
-            </div>
-
-            <div
-                className="theback"
-                ref={cardRef}
-                onClick={handleClickCardBack}
-            >
                 <h1 className="timesDone" ref={timesDoneRef}>
                     {count} times
                 </h1>
@@ -74,6 +67,25 @@ export default function Card({ imgSrc, title, desc,link} ) {
                         Done
                     </button>
                 </div>
+            </div>
+
+            <div
+                className="theback"
+                ref={cardRef}
+                onClick={handleClickCardBack}
+            >
+                <img
+                    ref={imgRef}
+                    src={xIcon}
+                    alt="close-icon"
+                    className="close-icon"
+                />
+                <h2 className="desc" ref={descRef}>
+                    {desc}
+                </h2>
+                <h3 className="link" ref={linkRef}>
+                    {link}
+                </h3>
             </div>
 
         </div>
