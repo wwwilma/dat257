@@ -39,8 +39,21 @@ const getUserName = (userId) => {
         });
 };
 
+const getAllHabits = () => {
+    return crateClient
+        .query("SELECT id, name, description FROM database.habits ORDER BY id;")
+        .then((res) => {
+            return res.rows;
+        })
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+};
+
 // Export the functions, so they can be used by other modules
 module.exports = {
     getUsers: getUsers,
     getUserName: getUserName,
+    getAllHabits: getAllHabits,
 };
