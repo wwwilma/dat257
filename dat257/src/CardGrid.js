@@ -99,12 +99,11 @@ export default function CardGrid() {
 
     return (
         <div className={"container"}>
-            {habits.map((card, index) => (
+            {habits.map(habit => (
                 <Card
-                    key={index}
-                    imgSrc={card.imgSrc}
-                    title={card.title}
-                    desc={card.desc}
+                    key={habit.id}
+                    title={habit.name}
+                    desc={habit.description}
                 />
             ))}
         </div>
