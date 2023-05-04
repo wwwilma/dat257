@@ -142,6 +142,23 @@
     /* Add some padding to avoid the text being too close to the edge */
     margin-left: -17px;
     width: calc(100% + 40px); /* Sets the width to match the card width minus the padding */
+    scrollbar-color: #897C58 #3A5A40; /* thumb and track color */
+    scrollbar-width: thin; /* Adjust the width of the scrollbar */
+}
+
+/* Custom scrollbar styles */
+.desc::-webkit-scrollbar {
+    width: 6px; /* Adjust the width of the scrollbar */
+    background-color: #3A5A40; /* Match the background color of the card */
+}
+
+.desc::-webkit-scrollbar-thumb {
+    background-color: #897C58; /* Match the color of the 'Done' button */
+    border-radius: 3px; /* Add some border-radius to make the scrollbar thumb rounded */
+}
+
+.desc::-webkit-scrollbar-track {
+    background-color: #3A5A00; /* Match the background color of the card */
 }
 
 /* */
