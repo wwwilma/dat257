@@ -15,17 +15,23 @@ export default function Card({ imgSrc, title, desc,link} ) {
     const descRef = useRef(null);
     const linkRef = useRef(null);
     const [style,setStyle] = useState("cardFront")
+    const [showFront, setShowFront] = useState(true);
+    const [showBack,setShowBack] = useState(false)
 
 
     // Function for handle click on card.
     function handleClickCardFront() {
         console.log('Card clicked');
         setStyle("cardBack")
+        setShowFront(false)
+        setShowBack(true)
     }
 
     function handleClickCardBack() {
         console.log('Card clicked');
         setStyle("cardFront")
+        setShowFront(true)
+        setShowBack(false)
     }
 
     // Function where the counter increments with 1, every time the card is clicked.
@@ -44,6 +50,8 @@ export default function Card({ imgSrc, title, desc,link} ) {
                 ref={cardRef}
                 onClick={handleClickCardFront}
             >
+                {showFront && (
+                    <>
                 <img
                     ref={imgRef}
                     src={infoIcon}
@@ -67,6 +75,8 @@ export default function Card({ imgSrc, title, desc,link} ) {
                         Done
                     </button>
                 </div>
+                    </>
+                )}
             </div>
 
             <div
@@ -74,6 +84,8 @@ export default function Card({ imgSrc, title, desc,link} ) {
                 ref={cardRef}
                 onClick={handleClickCardBack}
             >
+                {showBack && (
+                    <>
                 <img
                     ref={imgRef}
                     src={xIcon}
@@ -86,8 +98,9 @@ export default function Card({ imgSrc, title, desc,link} ) {
                 <h3 className="link" ref={linkRef}>
                     {link}
                 </h3>
+                    </>
+                )}
             </div>
-
         </div>
     );
 
