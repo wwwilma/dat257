@@ -5,7 +5,7 @@ import xIcon from "./img/x-icon.jpg";
 import axios from "axios";
 
 // Card component for the tasks.
-export default function Card({ imgSrc, title, desc,link} ) {
+export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
     const cardRef = useRef(null);
     const imgRef = useRef(null);
     const titleRef = useRef(null);
@@ -15,9 +15,9 @@ export default function Card({ imgSrc, title, desc,link} ) {
     const [count, setCount] = useState(0);
     const descRef = useRef(null);
     const linkRef = useRef(null);
-    const [style,setStyle] = useState("cardFront")
+    const [style, setStyle] = useState("cardFront")
     const [showFront, setShowFront] = useState(true);
-    const [showBack,setShowBack] = useState(false)
+    const [showBack, setShowBack] = useState(false)
 
     const fetchTimesDone = async () => {
         try {
@@ -45,7 +45,9 @@ export default function Card({ imgSrc, title, desc,link} ) {
         setShowFront(true)
         setShowBack(false)
     }
-    async function handleClickDone() {
+
+    async function handleClickDone(event) {
+        event.stopPropagation();
         try {
             const newCount = parseInt(count) + 1;
             setCount(newCount);
@@ -69,29 +71,29 @@ export default function Card({ imgSrc, title, desc,link} ) {
             >
                 {showFront && (
                     <>
-                <img
-                    ref={imgRef}
-                    src={infoIcon}
-                    alt="info-icon"
-                    className="info-icon"
-                />
-                <img
-                    ref={imgRef}
-                    src={imgSrc}
-                    alt="task-img"
-                    className="task-img"
-                />
-                <h1 className="title" ref={titleRef}>
-                    {title}
-                </h1>
-                <h1 className="timesDone" ref={timesDoneRef}>
-                    {count} times
-                </h1>
-                <div className="button-box" ref={doneRef}>
-                    <button className="done" onClick={handleClickDone} >
-                        Done
-                    </button>
-                </div>
+                        <img
+                            ref={imgRef}
+                            src={infoIcon}
+                            alt="info-icon"
+                            className="info-icon"
+                        />
+                        <img
+                            ref={imgRef}
+                            src={imgSrc}
+                            alt="task-img"
+                            className="task-img"
+                        />
+                        <h1 className="title" ref={titleRef}>
+                            {title}
+                        </h1>
+                        <h1 className="timesDone" ref={timesDoneRef}>
+                            {count} times
+                        </h1>
+                        <div className="button-box" ref={doneRef}>
+                            <button className="done" onClick={handleClickDone}>
+                                Done
+                            </button>
+                        </div>
                     </>
                 )}
             </div>
@@ -103,18 +105,18 @@ export default function Card({ imgSrc, title, desc,link} ) {
             >
                 {showBack && (
                     <>
-                <img
-                    ref={imgRef}
-                    src={xIcon}
-                    alt="close-icon"
-                    className="close-icon"
-                />
-                <h2 className="desc" ref={descRef}>
-                    {desc}
-                </h2>
-                <h3 className="link" ref={linkRef}>
-                    {link}
-                </h3>
+                        <img
+                            ref={imgRef}
+                            src={xIcon}
+                            alt="close-icon"
+                            className="close-icon"
+                        />
+                        <h2 className="desc" ref={descRef}>
+                            {desc}
+                        </h2>
+                        <h3 className="link" ref={linkRef}>
+                            {link}
+                        </h3>
                     </>
                 )}
             </div>
