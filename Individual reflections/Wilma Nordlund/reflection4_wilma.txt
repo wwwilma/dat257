@@ -1,0 +1,11 @@
+Individual Reflection 4
+
+This week was a bit shorter due to 1st May. We still planned an ambitious sprint with quite a lot of story points.
+Two of the user stories were given 13 story points, and both included pair programming.
+I worked together with Kristin and Hanna to make the connection to the database.
+We struggled a bit and didn't manage to resolve all acceptance criteria during the sprint.
+The other user story with 13 points wasn't completed either.
+I think it was a good learning experience; the week being a bit shorter wasn't the main problem.
+Rather, the problem was with the user stories being too heavy and us not realising how long time it would take.
+Next week, we will complete these stories.
+It was a good experience to do some pair programming, an effective way of both working and learning.
