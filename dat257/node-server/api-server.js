@@ -1,6 +1,6 @@
 // Import necessary dependencies
 const express = require('express');
-const {getUsers, getUserName, getAllHabits} = require('./database-connection');
+const {getUsers, getUserName, getAllHabits, getTimesDone, incrementTimesDone} = require('./database-connection');
 
 // Create an Express app
 const app = express();
@@ -51,6 +51,31 @@ app.get('/habits', (req, res) => {
             res.status(500).send(error);
         });
 });
+
+app.get('/trackers/:userID/:habitID', (req, res) => {
+    const userId = parseInt(req.params.userID)
+    const habitId = parseInt(req.params.habitID)
+    getTimesDone(userId, habitId)
+        .then(response => {
+            res.status(200).send(response);
+        })
+        .catch(error => {
+            res.status(500).send(error);
+        });
+});
+app.post('/trackers/:userID/:habitID', (req, res) => {
+    const userId = parseInt(req.params.userID);
+    const habitId = parseInt(req.params.habitID);
+    const count = parseInt(req.body.count)
+    incrementTimesDone(userId, habitId, count)
+        .then(() => {
+            res.status(200).send('Times done updated');
+        })
+        .catch(error => {
+            res.status(500).send(error);
+        });
+});
+
 
 // Start the Express app on the specified port
 app.listen(port, () => {

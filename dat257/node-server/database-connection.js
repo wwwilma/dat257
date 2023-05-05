@@ -50,10 +50,32 @@ const getAllHabits = () => {
             crateClient.end();
         });
 };
+const getTimesDone = (userId, habitId) => {
+    return crateClient
+        .query(`SELECT counter FROM database.trackers WHERE userid = ${userId} AND habitid = ${habitId} AND date= CURRENT_DATE;`)
+        .then((res) => {
+            return res.rows;
+        })
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+};
+
+const incrementTimesDone = (userId, habitId, nr) => {
+    return crateClient
+        .query(`UPDATE database.trackers SET counter = ${nr} WHERE userid = ${userId} AND habitid = ${habitId} AND date = CURRENT_DATE;`)
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+};
 
 // Export the functions, so they can be used by other modules
 module.exports = {
     getUsers: getUsers,
     getUserName: getUserName,
     getAllHabits: getAllHabits,
+    getTimesDone: getTimesDone,
+    incrementTimesDone: incrementTimesDone,
 };

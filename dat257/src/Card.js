@@ -1,71 +1,54 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Card.css";
+import axios from "axios";
 
-// Card component for the tasks.
-export default function Card({ imgSrc, title, desc} ) {
-    const cardRef = useRef(null);
-    const imgRef = useRef(null);
-    const titleRef = useRef(null);
-    const doneRef = useRef(null);
-    const timesDoneRef = useRef(null)
-    //constant for counting the button clicks
+export default function Card({ imgSrc, title, desc, habitId, user }) {
     const [count, setCount] = useState(0);
-    const descRef = useRef(null);
 
+    const fetchTimesDone = async () => {
+        try {
+            const response = await axios.get(`http://localhost:3001/trackers/${user}/${habitId}`);
+            setCount(response.data[0].counter);
+        } catch (error) {
+            console.error('Error fetching times done:', error);
+        }
+    };
 
-    // Function for handle click on card.
+    useEffect(() => {
+        fetchTimesDone();
+    }, []);
+
     function handleClickCard() {
         console.log('Card clicked');
     }
-
-    // Function where the counter increments with 1, every time the card is clicked.
-    function handleClickDone() {
-        setCount(count + 1);
+    async function handleClickDone() {
+        try {
+            const newCount = parseInt(count) + 1;
+            setCount(newCount);
+            await axios.post(`http://localhost:3001/trackers/${user}/${habitId}`, {
+                count: newCount,
+            });
+        } catch (error) {
+            console.error('Error updating click count:', error);
+        }
     }
 
     return (
-        <div
-            className="card"
-            ref={cardRef}
-            onClick={handleClickCard}
-        >
-            <div
-                className="thefront"
-                ref={cardRef}
-            >
-                <img
-                    ref={imgRef}
-                    src={imgSrc}
-                    alt="task-img"
-                    className="task-img"
-                />
-                <h1 className="title" ref={titleRef}>
-                    {title}
-                </h1>
-                <h2 className="desc" ref={descRef}>
-                    {desc}
-                </h2>
-
-
+        <div className="card" onClick={handleClickCard}>
+            <div className="thefront">
+                <img src={imgSrc} alt="task-img" className="task-img" />
+                <h1 className="title">{title}</h1>
+                <h2 className="desc">{desc}</h2>
             </div>
 
-            <div
-                className="theback"
-                ref={cardRef}
-            >
-                <h1 className="timesDone" ref={timesDoneRef}>
-                    {count} times
-                </h1>
-                <div className="button-box" ref={doneRef}>
-                    <button className="done" onClick={handleClickDone} >
+            <div className="theback">
+                <h1 className="timesDone">{count} times</h1>
+                <div className="button-box">
+                    <button className="done" onClick={handleClickDone}>
                         Done
                     </button>
                 </div>
             </div>
-
         </div>
     );
-
-
-
 }
