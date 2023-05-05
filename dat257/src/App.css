@@ -7,3 +7,9 @@ body{
   background-color: #D7D2C1;
 }
 
+.pages{
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
