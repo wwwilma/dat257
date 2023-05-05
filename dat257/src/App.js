@@ -8,6 +8,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { useState } from "react";
 import AllHabits from "./pages/AllHabits";
+import AboutUs from './pages/AboutUs';
+import Information from './pages/Information';
 
 export default function App() {
     const [userID, setUserID] = useState(0);
@@ -21,13 +23,17 @@ export default function App() {
             <div>
                 <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} userID = {userID}/>
                 <Header />
-                <Footer />
+                <div class="pages">
                 <Routes>
                     <Route exact path="/" element={<Login onUserChange={handleUserChange} userID = {userID}/>}/>
                     <Route path="/statistics" element={<Statistics userID = {userID}/>} />
                     <Route path="/Home" element={<Home userID = {userID}/>} />
                     <Route path="/allhabits" element={<AllHabits/>} />
+                    <Route path="/aboutus" element={<AboutUs/>} />
+                    <Route path="/information" element={<Information/>} />
                 </Routes>
+                </div>
+                <Footer />
             </div>
         </BrowserRouter>
     );
