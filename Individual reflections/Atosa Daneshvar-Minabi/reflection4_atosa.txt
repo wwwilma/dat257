@@ -1,0 +1,6 @@
+The group has worked together well this week and the sprint has gone ok even though it was a day less than last week. 
+This week I did some front-end work. I ran into some problems I didn’t anticipate when I tried to add tailwind to our project. 
+I noticed it made the margins weird on the cards after I was done with my task. So I re-did my work without tailwind which made
+me not fulfill an acceptance criteria on a task. It taught me to write more thoughtful acceptance criterias though. The project is 
+progressing well and fast and there’s not much time left of the course. I didn’t get to work on the integration between the database 
+and the heatmap as I said that I wanted to last week but we still have to do that so I hope I get to be a part of that next week. 
