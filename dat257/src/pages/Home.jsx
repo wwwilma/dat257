@@ -24,7 +24,7 @@ function Home({userID}) {
     return (
         <div>
             <h1>Hello {userName}!</h1>
-            <CardGrid/>
+            <CardGrid user = {userID}/>
       </div>
     )
 }
