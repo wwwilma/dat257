@@ -1,6 +1,6 @@
 // Import necessary dependencies
 const express = require('express');
-const {getUsers, getUserName, getAllHabits, getTimesDone, setTimesDone} = require('./database-connection');
+const {getUsers, getUserName, getAllHabits, getTimesDone, incrementTimesDone} = require('./database-connection');
 
 // Create an Express app
 const app = express();
@@ -65,13 +65,14 @@ app.get('/trackers/:userID/:habitID', (req, res) => {
             res.status(500).send(error);
         });
 });
+
 // Define the POST '/trackers/:userID/:habitID'
 // This posts how many times a user has clicked on a specific habit in the database.
 app.post('/trackers/:userID/:habitID', (req, res) => {
     const userId = parseInt(req.params.userID);
     const habitId = parseInt(req.params.habitID);
     const count = parseInt(req.body.count)
-    setTimesDone(userId, habitId, count)
+    incrementTimesDone(userId, habitId, count)
         .then(() => {
             res.status(200).send('Times done updated');
         })

@@ -62,8 +62,8 @@ const getTimesDone = (userId, habitId) => {
             crateClient.end();
         });
 };
-// setTimesDone function that sets the counter to a number.
-const setTimesDone = (userId, habitId, nr) => {
+// incrementTimesDone function that sets the counter to a number.
+const incrementTimesDone = (userId, habitId, nr) => {
     return crateClient
         .query(`UPDATE database.trackers SET counter = ${nr} WHERE userid = ${userId} AND habitid = ${habitId} AND date = CURRENT_DATE;`)
         .catch((err) => {
@@ -78,5 +78,5 @@ module.exports = {
     getUserName: getUserName,
     getAllHabits: getAllHabits,
     getTimesDone: getTimesDone,
-    setTimeDone: setTimesDone,
+    incrementTimesDone: incrementTimesDone,
 };
