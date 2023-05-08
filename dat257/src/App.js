@@ -28,7 +28,7 @@ export default function App() {
                     <Route exact path="/" element={<Login onUserChange={handleUserChange} userID = {userID}/>}/>
                     <Route path="/statistics" element={<Statistics userID = {userID}/>} />
                     <Route path="/Home" element={<Home userID = {userID}/>} />
-                    <Route path="/allhabits" element={<AllHabits/>} />
+                    <Route path="/allhabits" element={<AllHabits userID = {userID}/>} />
                     <Route path="/aboutus" element={<AboutUs/>} />
                     <Route path="/information" element={<Information/>} />
                 </Routes>
