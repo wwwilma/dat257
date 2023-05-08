@@ -6,6 +6,7 @@ import axios from "axios";
 export default function CardGrid({ user }) { // Destructure the prop correctly
 
     const [habits, setHabits] = useState([]);
+    //get all habits from the db and set the constant.
     useEffect(() => {
         axios.get(`http://localhost:3001/habits`)
             .then(response => {

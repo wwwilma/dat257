@@ -19,6 +19,7 @@ export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
     const [showFront, setShowFront] = useState(true);
     const [showBack, setShowBack] = useState(false)
 
+    //Get from the db how many times the habit is clicked and set the constant.
     const fetchTimesDone = async () => {
         try {
             const response = await axios.get(`http://localhost:3001/trackers/${user}/${habitId}`);
@@ -45,7 +46,7 @@ export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
         setShowFront(true)
         setShowBack(false)
     }
-
+    //post to the db and update the count constant.
     async function handleClickDone(event) {
         event.stopPropagation();
         try {
