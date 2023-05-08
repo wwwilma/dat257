@@ -65,6 +65,7 @@ app.get('/trackers/:userID/:habitID', (req, res) => {
             res.status(500).send(error);
         });
 });
+
 // Define the POST '/trackers/:userID/:habitID'
 // This posts how many times a user has clicked on a specific habit in the database.
 app.post('/trackers/:userID/:habitID', (req, res) => {
