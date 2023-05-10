@@ -16,7 +16,7 @@ function Statistics({userID}) {
                 const data = response.data;
                 const transformedData = data.map(item => ({
                     date: item.date,
-                    count: item.counter
+                    count: parseInt(item.counter)
                 }));
                 console.log(transformedData)
                 setStatistics(transformedData);

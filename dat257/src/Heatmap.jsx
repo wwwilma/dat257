@@ -9,24 +9,14 @@ const weekEnd = endOfWeek(weekStart, {weekStartsOn: 1});
 const yearStart = startOfYear(new Date());
 const yearEnd = endOfYear(yearStart);
 
-const Heatmap = (statistics) => {
+const Heatmap = ({statistics}) => {
 
-    const value0 = [
-        { date: '2023/01/01', count: 0 },
-        { date: '2023/01/02', count: 20 },
-        { date: '2023/01/03', count: 10 },
-        { date: '2023/01/04', count: 2 },
-        { date: '2023/01/05', count: 5 },
-        { date: '2023/01/07', count: 11 },
-    ];
 
-    console.log(value0)
-    console.log(Object.values(statistics))
     return (
         <div>
             <h3>Weekly statistics (example)</h3>
             <HeatMap
-                value={Object.values(statistics)}
+                value={statistics}
                 startDate={weekStart}
                 endDate={weekEnd}
                 style={{ color: '#35524A' }}

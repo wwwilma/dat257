@@ -75,7 +75,7 @@ const incrementTimesDone = (userId, habitId, nr) => {
 // getStatistics function that retrieves statistics from database
 const getStatistics = (userId) => {
     return crateClient
-        .query(`SELECT DATE_FORMAT('%Y/%m/%d',date) AS date, counter FROM database.trackers WHERE userid = ${userId} ORDER BY date;`)
+        .query(`SELECT DATE_FORMAT('%Y/%m/%d',date) AS date, sum(counter) as counter FROM database.trackers WHERE userid = ${userId} GROUP BY date ORDER BY date;`)
         .then((res) => {
             return res.rows;
         })
