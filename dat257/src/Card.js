@@ -4,6 +4,7 @@ import infoIcon from "./img/info-icon.jpg";
 import xIcon from "./img/x-icon.jpg";
 import axios from "axios";
 
+
 // Card component for the tasks.
 export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
     const cardRef = useRef(null);
