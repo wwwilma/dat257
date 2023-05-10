@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Card.css";
 import infoIcon from "./img/info-icon.jpg";
+import starIcon from "./img/star-regular.svg";
 import xIcon from "./img/x-icon.jpg";
 import axios from "axios";
 
 
 // Card component for the tasks.
-export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
+export default function Card({ imgSrc, title, desc, link, user, habitId }) {
     const cardRef = useRef(null);
     const imgRef = useRef(null);
     const titleRef = useRef(null);
@@ -78,6 +79,12 @@ export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
                             src={infoIcon}
                             alt="info-icon"
                             className="info-icon"
+                        />
+                        <img
+                            ref={imgRef}
+                            src={starIcon}
+                            alt="favorite-icon"
+                            className="favorite-icon"
                         />
                         <img
                             ref={imgRef}
