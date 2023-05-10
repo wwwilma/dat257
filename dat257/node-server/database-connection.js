@@ -87,6 +87,9 @@ const getFavoriteHabits = (userId) => {
                         WHERE database.FavoriteHabits.userid = ${userId}
                           AND database.FavoriteHabits.Favorite = true)
                 order by id`)
+        .then((res) => {
+            return res.rows;
+        })
         .catch((err) => {
             console.error(err);
             crateClient.end();

@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function CardGridFavorite({ user }) { // Destructure the prop correctly
 
-    const [habits, setHabits] = useState([]);
+    const [habits, setHabits] = useState(null);
     //get all habits from the db and set the constant.
     useEffect(() => {
         axios.get(`http://localhost:3001/favoritehabits/${user}`)
@@ -19,7 +19,7 @@ export default function CardGridFavorite({ user }) { // Destructure the prop cor
 
     return (
         <div className={"container"}>
-            {habits.map(habit => (
+            {habits && habits.map(habit => (
                 <Card
                     key={habit.id}
                     title={habit.name}
