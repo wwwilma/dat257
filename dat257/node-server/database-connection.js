@@ -72,10 +72,24 @@ const incrementTimesDone = (userId, habitId, nr) => {
         });
 };
 
+// getStatistics function that retrieves statistics from database
+const getStatistics = (userId) => {
+    return crateClient
+        .query(`SELECT DATE_FORMAT('%Y/%m/%d',date) AS date, counter FROM database.trackers WHERE userid = ${userId} ORDER BY date;`)
+        .then((res) => {
+            return res.rows;
+        })
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+};
+
 // Export the functions, so they can be used by other modules
 module.exports = {
     getUsers: getUsers,
     getUserName: getUserName,
+    getStatistics: getStatistics,
     getAllHabits: getAllHabits,
     getTimesDone: getTimesDone,
     incrementTimesDone: incrementTimesDone,

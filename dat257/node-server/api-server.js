@@ -1,6 +1,6 @@
 // Import necessary dependencies
 const express = require('express');
-const {getUsers, getUserName, getAllHabits, getTimesDone, incrementTimesDone} = require('./database-connection');
+const {getUsers, getUserName, getStatistics, getAllHabits, getTimesDone, incrementTimesDone} = require('./database-connection');
 
 // Create an Express app
 const app = express();
@@ -34,6 +34,19 @@ app.get('/users', (req, res) => {
 app.get('/users/:userID', (req, res) => {
     const userId = req.params.userID; // Extract the user ID from the request parameters
     getUserName(userId)
+        .then(response => {
+            res.status(200).send(response);
+        })
+        .catch(error => {
+            res.status(500).send(error);
+        });
+});
+
+// Define the GET '/trackers/:userID'
+// This retrieves a specified users statistic in the database
+app.get('/trackers/:userID', (req, res) => {
+    const userId = req.params.userID; // Extract the user ID from the request parameters
+    getStatistics(userId)
         .then(response => {
             res.status(200).send(response);
         })
