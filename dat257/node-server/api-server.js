@@ -96,7 +96,7 @@ app.get('/favoritehabits/:userID', (req, res) => {
 app.post('/favorite/:userID/:habitID', (req, res) => {
     const userId = parseInt(req.params.userID);
     const habitId = parseInt(req.params.habitID);
-    const favorite = parseInt(req.body.favorite);
+    const favorite = req.body.favorite;
     setFavoriteHabit(userId, habitId, favorite)
         .then(() => {
             res.status(200).send('Favorite updated');

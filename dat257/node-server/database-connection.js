@@ -74,19 +74,24 @@ const incrementTimesDone = (userId, habitId, nr) => {
 
 const getFavoriteHabits = (userId) => {
     return crateClient
-        .query(`SELECT database.Habits.id, database.Habits.name, database.Habits.description
-                FROM database.habits
-                WHERE EXISTS(
-                        select 1
-                        FROM database.trackers
-                        where database.trackers.userid = ${userId}
-                          and database.trackers.date = CURRENT_DATE)
-                  AND EXISTS(
-                        select 1
-                        from database.FavoriteHabits
-                        WHERE database.FavoriteHabits.userid = ${userId}
-                          AND database.FavoriteHabits.Favorite = true)
-                order by id`)
+        .query(`SELECT h.id, h.name, h.description
+                FROM database.habits h
+                WHERE EXISTS (
+                        SELECT 1
+                        FROM database.trackers t
+                        WHERE t.userid = ${userId}
+                          AND t.habitid = h.id
+                          AND t.date = CURRENT_DATE
+                    )
+                  AND EXISTS (
+                        SELECT 2
+                        FROM database.FavoriteHabits f
+                        WHERE f.userid = ${userId}
+                          AND f.habitid = h.id
+                          AND f.favorite = true
+                    )
+                ORDER BY h.id limit 100;`)
+
         .then((res) => {
             return res.rows;
         })
@@ -96,14 +101,15 @@ const getFavoriteHabits = (userId) => {
         });
 };
 
-const setFavoriteHabit = (userId, habitId, boolean) => {
+const setFavoriteHabit = (userId, habitId, favorite) => {
     return crateClient
-        .query(`UPDATE database.favoritehabits SET database.favoritehabits.favorite = ${boolean} WHERE userid = ${userId} AND habitid = ${habitId};`)
+        .query(`UPDATE database.favoritehabits SET favorite = $1 WHERE userid = $2 AND habitid = $3;`, [favorite, userId, habitId])
         .catch((err) => {
             console.error(err);
             crateClient.end();
         });
 };
+
 
 
 

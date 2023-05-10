@@ -69,12 +69,13 @@ export default function Card({ imgSrc, title, desc, link, user, habitId }) {
         try {
             setIsFavorite(!isFavorite);
             await axios.post(`http://localhost:3001/favorite/${user}/${habitId} `, {
-                favorite: true,
+                favorite: !isFavorite,
             });
         } catch (error) {
             console.error('Error updating favorite', error);
         }
     }
+
 
     return (
         <div
