@@ -93,11 +93,11 @@ app.get('/favoritehabits/:userID', (req, res) => {
         });
 });
 
-app.post('/:userID/:habitID/:boolean', (req, res) => {
+app.post('/favorite/:userID/:habitID', (req, res) => {
     const userId = parseInt(req.params.userID);
     const habitId = parseInt(req.params.habitID);
-    const boolean = parseInt(req.body.boolean)
-    setFavoriteHabit(userId, habitId, boolean)
+    const favorite = parseInt(req.body.favorite);
+    setFavoriteHabit(userId, habitId, favorite)
         .then(() => {
             res.status(200).send('Favorite updated');
         })

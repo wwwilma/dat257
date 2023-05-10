@@ -98,7 +98,7 @@ const getFavoriteHabits = (userId) => {
 
 const setFavoriteHabit = (userId, habitId, boolean) => {
     return crateClient
-        .query(`update database.FavoriteHabits SET Favorite = ${boolean} Where userid = ${userId} and habitid = ${habitId};`)
+        .query(`UPDATE database.favoritehabits SET database.favoritehabits.favorite = ${boolean} WHERE userid = ${userId} AND habitid = ${habitId};`)
         .catch((err) => {
             console.error(err);
             crateClient.end();

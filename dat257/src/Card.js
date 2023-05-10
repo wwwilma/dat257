@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Card.css";
 import infoIcon from "./img/info-icon.jpg";
 import starIcon from "./img/star-regular.svg";
+import starFilled from "./img/star-solid.svg";
 import xIcon from "./img/x-icon.jpg";
 import axios from "axios";
 
@@ -19,7 +20,9 @@ export default function Card({ imgSrc, title, desc, link, user, habitId }) {
     const linkRef = useRef(null);
     const [style, setStyle] = useState("cardFront")
     const [showFront, setShowFront] = useState(true);
-    const [showBack, setShowBack] = useState(false)
+    const [showBack, setShowBack] = useState(false);
+    const [isFavorite, setIsFavorite] = useState(false);
+
 
     //Get from the db how many times the habit is clicked and set the constant.
     const fetchTimesDone = async () => {
@@ -61,6 +64,17 @@ export default function Card({ imgSrc, title, desc, link, user, habitId }) {
             console.error('Error updating click count:', error);
         }
     }
+    async function handleClickFavorite(event) {
+        event.stopPropagation();
+        try {
+            setIsFavorite(!isFavorite);
+            await axios.post(`http://localhost:3001/favorite/${user}/${habitId} `, {
+                favorite: true,
+            });
+        } catch (error) {
+            console.error('Error updating favorite', error);
+        }
+    }
 
     return (
         <div
@@ -81,8 +95,9 @@ export default function Card({ imgSrc, title, desc, link, user, habitId }) {
                             className="info-icon"
                         />
                         <img
+                            onClick={handleClickFavorite}
                             ref={imgRef}
-                            src={starIcon}
+                            src={isFavorite ? starFilled : starIcon} // Conditionally render the filled star when isFavorite is true
                             alt="favorite-icon"
                             className="favorite-icon"
                         />
