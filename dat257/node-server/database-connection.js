@@ -90,7 +90,7 @@ const getFavoriteHabits = (userId) => {
                           AND f.habitid = h.id
                           AND f.favorite = true
                     )
-                ORDER BY h.id limit 100;`)
+                ORDER BY h.id;`)
 
         .then((res) => {
             return res.rows;
