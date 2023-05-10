@@ -23,20 +23,22 @@ export default function Card({ imgSrc, title, desc, link, user, habitId }) {
     const [showBack, setShowBack] = useState(false);
     const [isFavorite, setIsFavorite] = useState(false);
 
-
-    //Get from the db how many times the habit is clicked and set the constant.
-    const fetchTimesDone = async () => {
+    const fetchTimesDoneAndFavorite = async () => {
         try {
-            const response = await axios.get(`http://localhost:3001/trackers/${user}/${habitId}`);
-            setCount(response.data[0].counter);
+            const [timesDoneResponse, favoriteResponse] = await Promise.all([
+                axios.get(`http://localhost:3001/trackers/${user}/${habitId}`),
+                axios.get(`http://localhost:3001/favoritehabits/${user}`)
+            ]);
+            setCount(timesDoneResponse.data[0].counter);
+            const isFavorite = favoriteResponse.data.some(habit => habit.id === habitId);
+            setIsFavorite(isFavorite);
         } catch (error) {
-            console.error('Error fetching times done:', error);
+            console.error('Error fetching times done and favorite:', error);
         }
     };
     useEffect(() => {
-        fetchTimesDone();
+        fetchTimesDoneAndFavorite();
     }, []);
-
     // Function for handle click on card.
     function handleClickCardFront() {
         console.log('Card clicked');
@@ -64,6 +66,7 @@ export default function Card({ imgSrc, title, desc, link, user, habitId }) {
             console.error('Error updating click count:', error);
         }
     }
+
     async function handleClickFavorite(event) {
         event.stopPropagation();
         try {
