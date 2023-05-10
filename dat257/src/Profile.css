@@ -1,12 +1,12 @@
-/*  src/Profile.css  */
-.Profile {
 
+.profile-logo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 100px;
+    top: 25px;
 }
 
-.profile-logo {
-    position: absolute;
-    width: 36px;
-    height: 30px;
-    right: 36px;
-    top: 36px;
+.profile-logo:hover{
+    opacity: 0.6;
 }

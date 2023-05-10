@@ -1,10 +1,15 @@
 import React from 'react'
 import './Header.css'
+import './Profile.css'
 import logo from './img/Track_logo.png'
 import profilelogo from './profile.svg'
 
 
 function Header() {
+    function onclickprofile() {
+
+    }
+
     return (
         <div className="Header">
             <img src={logo} className="App-logo" alt="logo"
@@ -14,13 +19,7 @@ function Header() {
                  }}
             />
 
-            <img src={profilelogo} className="profile-logo" alt="profilelogo"
-                 style={{
-                     width: 50,
-                     height: 50,
-                     right: 100,
-                     top: 25
-                 }}
+            <img src={profilelogo} className="profile-logo" alt="profilelogo" onClick={onclickprofile}
             />
         </div>
 
