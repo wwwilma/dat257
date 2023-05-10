@@ -13,12 +13,22 @@ function Statistics({userID}) {
     function getStatistics(userID){
         axios.get(`http://localhost:3001/trackers/${userID}`)
             .then(response => {
-                setStatistics(response.data)
+                const data = response.data;
+                const transformedData = data.map(item => ({
+                    date: item.date,
+                    count: item.counter
+                }));
+                console.log(transformedData)
+                setStatistics(transformedData);
             })
             .catch(error => {
                 console.log(error);
             });
     }
+
+
+
+
 
     return statistics.length>0 &&(
         <div>
