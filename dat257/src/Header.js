@@ -7,10 +7,6 @@ import {useNavigate} from "react-router-dom";
 
 
 function Header() {
-    const navigate = useNavigate();
-    function onclickprofile() {
-        navigate('/')
-    }
 
     return (
         <div className="Header">
@@ -20,10 +16,17 @@ function Header() {
                      height: 59
                  }}
             />
+            <img src={profilelogo} className="profile-logo" alt="profilelogo"/>
 
-            <img src={profilelogo} className="profile-logo" alt="profilelogo" onClick={onclickprofile}
-            />
+            <div className="dropdown">
+                <button className="dropbtn"></button>
+                <div className="dropdown-content">
+                    <a href="/" >Log Out</a>
+                </div>
+            </div>
         </div>
+
+
 
     )
 }
