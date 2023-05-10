@@ -72,6 +72,38 @@ const incrementTimesDone = (userId, habitId, nr) => {
         });
 };
 
+const getFavoriteHabits = (userId) => {
+    return crateClient
+        .query(`SELECT database.Habits.id, database.Habits.name, database.Habits.description
+                FROM database.habits
+                WHERE EXISTS(
+                        select 1
+                        FROM database.trackers
+                        where database.trackers.userid = ${userId}
+                          and database.trackers.date = CURRENT_DATE)
+                  AND EXISTS(
+                        select 1
+                        from database.FavoriteHabits
+                        WHERE database.FavoriteHabits.userid = ${userId}
+                          AND database.FavoriteHabits.Favorite = true)
+                order by id`)
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+};
+
+const setFavoriteHabit = (userId, habitId, boolean) => {
+    return crateClient
+        .query(`update database.FavoriteHabits SET Favorite = ${boolean} Where userid = ${userId} and habitid = ${habitId};`)
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+};
+
+
+
 // Export the functions, so they can be used by other modules
 module.exports = {
     getUsers: getUsers,
@@ -79,4 +111,6 @@ module.exports = {
     getAllHabits: getAllHabits,
     getTimesDone: getTimesDone,
     incrementTimesDone: incrementTimesDone,
+    getFavoriteHabits: getFavoriteHabits,
+    setFavoriteHabit, setFavoriteHabit,
 };
