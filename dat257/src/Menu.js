@@ -8,9 +8,6 @@ function MenuComponent() {
     return (
         <Menu right
               isOpen={ false }>
-            <Link className="menu-item" to="/">
-                All Users
-            </Link>
             <Link className="menu-item" to="/Home">
                 Home
             </Link>

@@ -3,11 +3,13 @@ import './Header.css'
 import './Profile.css'
 import logo from './img/Track_logo.png'
 import profilelogo from './profile.svg'
+import {useNavigate} from "react-router-dom";
 
 
 function Header() {
+    const navigate = useNavigate();
     function onclickprofile() {
-
+        navigate('/')
     }
 
     return (
