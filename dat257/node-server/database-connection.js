@@ -71,7 +71,7 @@ const incrementTimesDone = (userId, habitId, nr) => {
             crateClient.end();
         });
 };
-
+// getFavoriteHabits function that retrieves all favorite habits for a specific user from the database.
 const getFavoriteHabits = (userId) => {
     return crateClient
         .query(`SELECT h.id, h.name, h.description
@@ -100,10 +100,10 @@ const getFavoriteHabits = (userId) => {
             crateClient.end();
         });
 };
-
+// setFavoriteHabit function that sets favorite to true or false
 const setFavoriteHabit = (userId, habitId, favorite) => {
     return crateClient
-        .query(`UPDATE database.favoritehabits SET favorite = $1 WHERE userid = $2 AND habitid = $3;`, [favorite, userId, habitId])
+        .query(`UPDATE database.favoritehabits SET favorite = ${favorite} WHERE userid = ${userId} AND habitid = ${habitId};`)
         .catch((err) => {
             console.error(err);
             crateClient.end();
@@ -121,5 +121,5 @@ module.exports = {
     getTimesDone: getTimesDone,
     incrementTimesDone: incrementTimesDone,
     getFavoriteHabits: getFavoriteHabits,
-    setFavoriteHabit, setFavoriteHabit,
+    setFavoriteHabit: setFavoriteHabit,
 };

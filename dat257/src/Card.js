@@ -23,6 +23,7 @@ export default function Card({ imgSrc, title, desc, link, user, habitId }) {
     const [showBack, setShowBack] = useState(false);
     const [isFavorite, setIsFavorite] = useState(false);
 
+    // Get the timesdone and favorite habits from the database and set the constants.
     const fetchTimesDoneAndFavorite = async () => {
         try {
             const [timesDoneResponse, favoriteResponse] = await Promise.all([
@@ -66,7 +67,7 @@ export default function Card({ imgSrc, title, desc, link, user, habitId }) {
             console.error('Error updating click count:', error);
         }
     }
-
+    //toggle the constant isFavorite and post it to the db.
     async function handleClickFavorite(event) {
         event.stopPropagation();
         try {

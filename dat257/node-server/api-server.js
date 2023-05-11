@@ -81,7 +81,8 @@ app.post('/trackers/:userID/:habitID', (req, res) => {
             res.status(500).send(error);
         });
 });
-
+// Define the GET '/favoritehabits/:userID'
+// This retrieves favorite habits for a specific user in the database.
 app.get('/favoritehabits/:userID', (req, res) => {
     const userId = parseInt(req.params.userID)
     getFavoriteHabits(userId)
@@ -92,7 +93,8 @@ app.get('/favoritehabits/:userID', (req, res) => {
             res.status(500).send(error);
         });
 });
-
+// Define the POST '/favorite/:userID/:habitID'
+// This posts favorite habits for a specific user in the database.
 app.post('/favorite/:userID/:habitID', (req, res) => {
     const userId = parseInt(req.params.userID);
     const habitId = parseInt(req.params.habitID);
