@@ -1,11 +1,33 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Heatmap from '../Heatmap';
+import axios from "axios";
 
 function Statistics({userID}) {
-    console.log(userID)
-    return (
+
+    const [statistics, setStatistics] = useState([]);
+
+    useEffect(() => {
+        getStatistics(userID);
+    }, [userID]);
+
+    function getStatistics(userID){
+        axios.get(`http://localhost:3001/trackers/${userID}`)
+            .then(response => {
+                const data = response.data;
+                const transformedData = data.map(item => ({
+                    date: item.date,
+                    count: parseInt(item.counter)
+                }));
+                console.log(transformedData)
+                setStatistics(transformedData);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
+    return statistics.length>0 &&(
         <div>
-            <Heatmap />
+            <Heatmap statistics={statistics} />
         </div>
     )
 }

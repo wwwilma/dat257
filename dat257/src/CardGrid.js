@@ -14,7 +14,7 @@ export default function CardGrid({ user }) { // Destructure the prop correctly
             })
             .catch(error => {
                 console.log(error);
-            });
+            })
     }, []);
 
     return (

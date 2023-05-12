@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import { useState } from 'react';
-import CardGrid from "../CardGrid";
 import axios from "axios";
+import CardGridFavorite from "../CardGridFavorite";
 //homepage
 function Home({userID}) {
     const [userName, setUserName] = useState('{User_Name}');
@@ -24,7 +24,7 @@ function Home({userID}) {
     return (
         <div>
             <h1>Hello {userName}!</h1>
-            <CardGrid user = {userID}/>
+            <CardGridFavorite user = {userID}/>
       </div>
     )
 }

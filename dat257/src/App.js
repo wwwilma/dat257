@@ -24,7 +24,7 @@ export default function App() {
             <div>
                 <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} userID = {userID}/>
                 <Header />
-                <div class="pages">
+                <div className="pages">
                 <Routes>
                     <Route exact path="/" element={<Login onUserChange={handleUserChange} userID = {userID}/>}/>
                     <Route path="/statistics" element={<Statistics userID = {userID}/>} />

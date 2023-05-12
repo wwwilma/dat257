@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Card.css";
 import infoIcon from "./img/info-icon.jpg";
+import starIcon from "./img/star-regular.svg";
+import starFilled from "./img/star-solid.svg";
 import xIcon from "./img/x-icon.jpg";
 import axios from "axios";
 
+
 // Card component for the tasks.
-export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
+export default function Card({ imgSrc, title, desc, link, user, habitId }) {
     const cardRef = useRef(null);
     const imgRef = useRef(null);
     const titleRef = useRef(null);
@@ -17,21 +20,26 @@ export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
     const linkRef = useRef(null);
     const [style, setStyle] = useState("cardFront")
     const [showFront, setShowFront] = useState(true);
-    const [showBack, setShowBack] = useState(false)
+    const [showBack, setShowBack] = useState(false);
+    const [isFavorite, setIsFavorite] = useState(false);
 
-    //Get from the db how many times the habit is clicked and set the constant.
-    const fetchTimesDone = async () => {
+    // Get the timesdone and favorite habits from the database and set the constants.
+    const fetchTimesDoneAndFavorite = async () => {
         try {
-            const response = await axios.get(`http://localhost:3001/trackers/${user}/${habitId}`);
-            setCount(response.data[0].counter);
+            const [timesDoneResponse, favoriteResponse] = await Promise.all([
+                axios.get(`http://localhost:3001/trackers/${user}/${habitId}`),
+                axios.get(`http://localhost:3001/favoritehabits/${user}`)
+            ]);
+            setCount(timesDoneResponse.data[0].counter);
+            const isFavorite = favoriteResponse.data.some(habit => habit.id === habitId);
+            setIsFavorite(isFavorite);
         } catch (error) {
-            console.error('Error fetching times done:', error);
+            console.error('Error fetching times done and favorite:', error);
         }
     };
     useEffect(() => {
-        fetchTimesDone();
+        fetchTimesDoneAndFavorite();
     }, []);
-
     // Function for handle click on card.
     function handleClickCardFront() {
         console.log('Card clicked');
@@ -59,6 +67,19 @@ export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
             console.error('Error updating click count:', error);
         }
     }
+    //toggle the constant isFavorite and post it to the db.
+    async function handleClickFavorite(event) {
+        event.stopPropagation();
+        try {
+            setIsFavorite(!isFavorite);
+            await axios.post(`http://localhost:3001/favorite/${user}/${habitId} `, {
+                favorite: !isFavorite,
+            });
+        } catch (error) {
+            console.error('Error updating favorite', error);
+        }
+    }
+
 
     return (
         <div
@@ -77,6 +98,13 @@ export default function Card({ imgSrc, title, desc,link, user, habitId} ) {
                             src={infoIcon}
                             alt="info-icon"
                             className="info-icon"
+                        />
+                        <img
+                            onClick={handleClickFavorite}
+                            ref={imgRef}
+                            src={isFavorite ? starFilled : starIcon} // Conditionally render the filled star when isFavorite is true
+                            alt="favorite-icon"
+                            className="favorite-icon"
                         />
                         <img
                             ref={imgRef}
