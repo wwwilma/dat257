@@ -1,66 +1,54 @@
 import React from 'react';
 import HeatMap from '@uiw/react-heat-map';
+import {endOfWeek, endOfYear, startOfWeek, startOfYear} from 'date-fns'
 
 //The calendar heatmaps are made with react-heat-map from https://uiwjs.github.io/react-heat-map/
 //Value0 is the weekly data and value1 is the yearly data, each date represents a rectangle.
 
-const value0 = [
-    { date: '2023/01/01', count: 0 },
-    { date: '2023/01/02', count: 20 },
-    { date: '2023/01/03', count: 10 },
-    { date: '2023/01/04', count: 2 },
-    { date: '2023/01/05', count: 5 },
-    { date: '2023/01/07', count: 11 },
-];
+const weekStart = startOfWeek(new Date(), {weekStartsOn: 0});
+const weekEnd = endOfWeek(weekStart, {weekStartsOn: 0});
+const yearStart = startOfYear(new Date());
+const yearEnd = endOfYear(yearStart);
 
-const value1 = [
-    { date: '2023/01/11', count: 2 },
-    { date: '2023/01/12', count: 20 },
-    { date: '2023/01/13', count: 10 },
-    ...[...Array(17)].map((_, idx) => ({ date: `2023/03/${idx + 10}`, count: idx, content: '' })),
-    { date: '2023/04/11', count: 2 },
-    { date: '2023/05/01', count: 5 },
-    { date: '2023/05/02', count: 5 },
-    { date: '2023/05/04', count: 11 },
-];
-
-const Heatmap = () => {
+const Heatmap = ({statistics}) => {
     return (
         <div>
-            <h3>Weekly statistics (example)</h3>
+            <h3>Weekly statistics</h3>
             <HeatMap
-                value={value0}
-                startDate={new Date('2023/01/01')}
-                endDate={new Date('2023/01/07')}
+                value={statistics}
+                startDate={weekStart}
+                endDate={weekEnd}
                 style={{ color: '#35524A' }}
                 rectSize={14}
                 legendCellSize={0}
                 space={2}
                 panelColors={{
-                    0: '#d8d2cd',
-                    2: '#aff5e0',
-                    4: '#4bd7ad',
-                    10: '#42A588',
-                    20: '#2b5f4f',
-                    30: '#213f37',
+                    1: '#C4B1E7',
+                    6: '#A183D8',
+                    11: '#7D54C9',
+                    21: '#5F36AB',
+                    31: '#45277C',
+                    41: '#2B184E',
+                    101: '#110A1F',
                 }}
-                weekLabels={['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']}
+                weekLabels={['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']}
                 monthLabels={{Boolean:false}}
             />
-            <h3>Yearly statistics (example)</h3>
+            <h3>Yearly statistics</h3>
             <HeatMap
-                value={value1}
-                startDate={new Date('2022/12/31')}
-                endDate={new Date()}
+                value={statistics}
+                startDate={yearStart}
+                endDate={yearEnd}
                 style={{ color: '#35524A' }}
                 monthLabels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']}
                 panelColors={{
-                    0: '#d8d2cd',
-                    2: '#aff5e0',
-                    4: '#4bd7ad',
-                    10: '#42A588',
-                    20: '#2b5f4f',
-                    30: '#213f37',
+                    1: '#C4B1E7',
+                    6: '#A183D8',
+                    11: '#7D54C9',
+                    21: '#5F36AB',
+                    31: '#45277C',
+                    41: '#2B184E',
+                    101: '#110A1F',
                 }} />
         </div>
     )
