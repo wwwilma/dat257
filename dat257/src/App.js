@@ -11,6 +11,7 @@ import AllHabits from "./pages/AllHabits";
 import AboutUs from './pages/AboutUs';
 import Information from './pages/Information';
 
+
 export default function App() {
     const [userID, setUserID] = useState(0);
 
