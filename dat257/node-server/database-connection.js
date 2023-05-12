@@ -67,6 +67,29 @@ const incrementTimesDone = (userId, habitId, nr) => {
             crateClient.end();
         });
 };
+
+// getFavoriteHabits function that retrieves all favorite habits for a specific user from the database.
+const getFavoriteHabits = (userId) => {
+    return crateClient
+        .query(`SELECT h.id, h.name, h.description
+                FROM database.habits h
+                WHERE EXISTS (
+                        SELECT 1
+                        FROM database.trackers t
+                        WHERE t.userid = ${userId}
+                          AND t.habitid = h.id
+                          AND t.date = CURRENT_DATE
+                    )
+                  AND EXISTS (
+                        SELECT 2
+                        FROM database.FavoriteHabits f
+                        WHERE f.userid = ${userId}
+                          AND f.habitid = h.id
+                          AND f.favorite = true
+                    )
+                ORDER BY h.id;`)
+
+
 // getStatistics function that retrieves statistics from database
 const getStatistics = (userId) => {
     return crateClient
@@ -79,6 +102,21 @@ const getStatistics = (userId) => {
             crateClient.end();
         });
 };
+
+// setFavoriteHabit function that sets favorite to true or false
+const setFavoriteHabit = (userId, habitId, favorite) => {
+    return crateClient
+        .query(`UPDATE database.favoritehabits SET favorite = ${favorite} WHERE userid = ${userId} AND habitid = ${habitId};`)
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+};
+
+
+
+
+
 // Export the functions, so they can be used by other modules
 module.exports = {
     getUsers: getUsers,
@@ -87,4 +125,6 @@ module.exports = {
     getAllHabits: getAllHabits,
     getTimesDone: getTimesDone,
     incrementTimesDone: incrementTimesDone,
+    getFavoriteHabits: getFavoriteHabits,
+    setFavoriteHabit: setFavoriteHabit,
 };

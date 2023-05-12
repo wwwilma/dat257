@@ -1,6 +1,6 @@
 // Import necessary dependencies
 const express = require('express');
-const {getUsers, getUserName, getStatistics, getAllHabits, getTimesDone, incrementTimesDone} = require('./database-connection');
+const {getUsers, getUserName, getAllHabits, getTimesDone, incrementTimesDone, getFavoriteHabits, setFavoriteHabit} = require('./database-connection');
 // Create an Express app
 const app = express();
 const port = 3001;
@@ -81,6 +81,33 @@ app.post('/trackers/:userID/:habitID', (req, res) => {
     incrementTimesDone(userId, habitId, count)
         .then(() => {
             res.status(200).send('Times done updated');
+        })
+        .catch(error => {
+            res.status(500).send(error);
+        });
+});
+
+// Define the GET '/favoritehabits/:userID'
+// This retrieves favorite habits for a specific user in the database.
+app.get('/favoritehabits/:userID', (req, res) => {
+    const userId = parseInt(req.params.userID)
+    getFavoriteHabits(userId)
+        .then(response => {
+            res.status(200).send(response);
+        })
+        .catch(error => {
+            res.status(500).send(error);
+        });
+});
+// Define the POST '/favorite/:userID/:habitID'
+// This posts favorite habits for a specific user in the database.
+app.post('/favorite/:userID/:habitID', (req, res) => {
+    const userId = parseInt(req.params.userID);
+    const habitId = parseInt(req.params.habitID);
+    const favorite = req.body.favorite;
+    setFavoriteHabit(userId, habitId, favorite)
+        .then(() => {
+            res.status(200).send('Favorite updated');
         })
         .catch(error => {
             res.status(500).send(error);
