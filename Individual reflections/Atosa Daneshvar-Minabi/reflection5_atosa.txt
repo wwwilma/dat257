@@ -1,0 +1,9 @@
+I have been at home this whole week because I was sick. The work has gone well anyway though.
+I participated in all the meetings online and we did some pair programming too. I worked
+with two other members on a big task which let the user favorite a card to their own page.
+I added the front end part but then we ran into some problems when we tried to connect the 
+functionality to the database. A group member helped solve it in the end though so it all worked out.
+Next week is the last sprint which is good because we've already added all the big user stories 
+that we wanted to for the project. I hope I get to do some more pair programming then because it 
+was very rewarding this week. It'll be exciting to see the finished product then and I'm
+looking forward to it!
