@@ -3,7 +3,7 @@ import './Header.css'
 import './Profile.css'
 import logo from './img/Track_logo.png'
 import profilelogo from './profile.svg'
-import {useNavigate} from "react-router-dom";
+
 
 
 function Header() {
@@ -21,7 +21,7 @@ function Header() {
             <div className="dropdown">
                 <button className="dropbtn"></button>
                 <div className="dropdown-content">
-                    <a href="/" >Log Out</a>
+                    <a href="/" >Change user</a>
                 </div>
             </div>
         </div>
