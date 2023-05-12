@@ -4,17 +4,17 @@ import {endOfWeek, endOfYear, startOfWeek, startOfYear} from 'date-fns'
 
 //The calendar heatmaps are made with react-heat-map from https://uiwjs.github.io/react-heat-map/
 
-const weekStart = startOfWeek(new Date(), {weekStartsOn: 1});
-const weekEnd = endOfWeek(weekStart, {weekStartsOn: 1});
+const weekStart = startOfWeek(new Date(), {weekStartsOn: 0});
+const weekEnd = endOfWeek(weekStart, {weekStartsOn: 0});
 const yearStart = startOfYear(new Date());
 const yearEnd = endOfYear(yearStart);
 
 const Heatmap = ({statistics}) => {
 
-
     return (
+
         <div>
-            <h3>Weekly statistics (example)</h3>
+            <h3>Weekly statistics</h3>
             <HeatMap
                 value={statistics}
                 startDate={weekStart}
@@ -24,30 +24,32 @@ const Heatmap = ({statistics}) => {
                 legendCellSize={0}
                 space={2}
                 panelColors={{
-                    0: '#ef0fcb',
-                    2: '#2261a8',
-                    4: '#3cc00e',
-                    10: '#a90909',
-                    20: '#c5a718',
-                    30: '#213f37',
+                    1: '#c4b1e7',
+                    6: '#a183d8',
+                    11: '#7d54c9',
+                    21: '#5f36ab',
+                    31: '#45277c',
+                    41: '#2b184e',
+                    101: '#110a1f',
                 }}
-                weekLabels={['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']}
+                weekLabels={['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']}
                 monthLabels={{Boolean:false}}
             />
-            <h3>Yearly statistics (example)</h3>
+            <h3>Yearly statistics</h3>
             <HeatMap
-                value={Object.values(statistics)}
+                value={statistics}
                 startDate={yearStart}
                 endDate={yearEnd}
                 style={{ color: '#35524A' }}
                 monthLabels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']}
                 panelColors={{
-                    0: '#ef0fcb',
-                    2: '#2261a8',
-                    4: '#3cc00e',
-                    10: '#a90909',
-                    20: '#c5a718',
-                    30: '#213f37',
+                    1: '#c4b1e7',
+                    6: '#a183d8',
+                    11: '#7d54c9',
+                    21: '#5f36ab',
+                    31: '#45277c',
+                    41: '#2b184e',
+                    101: '#110a1f',
                 }} />
         </div>
     )

@@ -27,9 +27,6 @@ function Statistics({userID}) {
     }
 
 
-
-
-
     return statistics.length>0 &&(
         <div>
             <Heatmap statistics={statistics} />
