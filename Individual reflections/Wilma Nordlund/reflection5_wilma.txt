@@ -1,0 +1,12 @@
+Individual Reflection 5
+
+This week we have finished the user stories we began working with last week.
+This week, we managed to solve all the previous problems.
+Kristin did a good job solving our problems with the habits in the database.
+I continued with making the text on the member buttons on the login page white.
+This increases the contrast, and also make the page look more coherent with the other pages.
+I also made the icons for the habit cards white, to increase contrast and made the cards look more clean.
+I did some researching on how to change the color on the icons dynamically.
+Instead of downloading new files or changing the color through the stylesheet, I made changes to the SVG path.
+I also made a to-do list for the refactoring of our codebase. 
+This was a kind of preparation for the refactoring of the codebase after all of the merging on Friday.
