@@ -1,6 +1,5 @@
 // Import the necessary dependency
 const { Client } = require("pg");
-
 // Create a new PostgreSQL client with the given configuration
 const crateClient = new Client({
     host: "task-database.aks1.westeurope.azure.cratedb.net",
@@ -9,10 +8,8 @@ const crateClient = new Client({
     password: "o2Ca^KJakCU-er3086t3nciJ",
     ssl: true,
 });
-
 // Connect to the CrateDB database
 crateClient.connect();
-
 // getUsers function that retrieves users from database
 const getUsers = () => {
     return crateClient
@@ -25,7 +22,6 @@ const getUsers = () => {
             crateClient.end();
         });
 };
-
 // getUserName function that retrieves a users name from database
 const getUserName = (userId) => {
     return crateClient
@@ -71,6 +67,7 @@ const incrementTimesDone = (userId, habitId, nr) => {
             crateClient.end();
         });
 };
+
 // getFavoriteHabits function that retrieves all favorite habits for a specific user from the database.
 const getFavoriteHabits = (userId) => {
     return crateClient
@@ -92,6 +89,11 @@ const getFavoriteHabits = (userId) => {
                     )
                 ORDER BY h.id;`)
 
+
+// getStatistics function that retrieves statistics from database
+const getStatistics = (userId) => {
+    return crateClient
+        .query(`SELECT DATE_FORMAT('%Y/%m/%d',date) AS date, sum(counter) as counter FROM database.trackers WHERE userid = ${userId} GROUP BY date ORDER BY date;`)
         .then((res) => {
             return res.rows;
         })
@@ -100,6 +102,7 @@ const getFavoriteHabits = (userId) => {
             crateClient.end();
         });
 };
+
 // setFavoriteHabit function that sets favorite to true or false
 const setFavoriteHabit = (userId, habitId, favorite) => {
     return crateClient
@@ -113,10 +116,12 @@ const setFavoriteHabit = (userId, habitId, favorite) => {
 
 
 
+
 // Export the functions, so they can be used by other modules
 module.exports = {
     getUsers: getUsers,
     getUserName: getUserName,
+    getStatistics: getStatistics,
     getAllHabits: getAllHabits,
     getTimesDone: getTimesDone,
     incrementTimesDone: incrementTimesDone,
