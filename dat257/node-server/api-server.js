@@ -1,6 +1,6 @@
 // Import necessary dependencies
 const express = require('express');
-const {getUsers, getUserName, getAllHabits, getTimesDone, incrementTimesDone, getFavoriteHabits, setFavoriteHabit} = require('./database-connection');
+const {getUsers, getUserName, getAllHabits, getTimesDone, incrementTimesDone, getFavoriteHabits, setFavoriteHabit, getStatistics} = require('./database-connection');
 // Create an Express app
 const app = express();
 const port = 3001;
