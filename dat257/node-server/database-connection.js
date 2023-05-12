@@ -73,14 +73,14 @@ const getFavoriteHabits = (userId) => {
     return crateClient
         .query(`SELECT h.id, h.name, h.description
                 FROM database.habits h
-                WHERE EXISTS (
+                WHERE EXISTS(
                         SELECT 1
                         FROM database.trackers t
                         WHERE t.userid = ${userId}
                           AND t.habitid = h.id
                           AND t.date = CURRENT_DATE
                     )
-                  AND EXISTS (
+                  AND EXISTS(
                         SELECT 2
                         FROM database.FavoriteHabits f
                         WHERE f.userid = ${userId}
@@ -88,6 +88,14 @@ const getFavoriteHabits = (userId) => {
                           AND f.favorite = true
                     )
                 ORDER BY h.id;`)
+        .then((res) => {
+            return res.rows;
+        })
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+}
 
 
 // getStatistics function that retrieves statistics from database
