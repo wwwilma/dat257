@@ -1,5 +1,5 @@
 import { slide as Menu } from 'react-burger-menu'
-import './Menu.css';
+import '../css/Menu.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import "./Card.css";
+import "../css/Card.css";
 import axios from "axios";
 
 export default function CardGridFavorite({ user }) { // Destructure the prop correctly

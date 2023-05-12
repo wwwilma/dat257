@@ -1,0 +1,6 @@
+
+During this week I have been trying to do as much work as I can while also taking care of my son who has been home sick,
+resulting in a somewhat limited productiveness. However, the main focus has been on learning about javascript and react
+which I have not worked with before.
+For the upcoming week I hope to be able to increase my physical attendance at the meetings and therefore contribute more
+to the team discussions, and also to chip in more on the technical part as we continue to build our application.
