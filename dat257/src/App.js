@@ -1,11 +1,11 @@
-import './App.css';
+import './css/App.css';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from './pages/Home';
 import Statistics from './pages/Statistics';
 import Login from './pages/Login'
-import Menu from './Menu';
-import Header from "./Header";
-import Footer from "./Footer";
+import Menu from './js/Menu';
+import Header from "./js/Header";
+import Footer from "./js/Footer";
 import { useState } from "react";
 import AllHabits from "./pages/AllHabits";
 import AboutUs from './pages/AboutUs';

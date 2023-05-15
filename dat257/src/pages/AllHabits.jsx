@@ -1,6 +1,6 @@
 import React from "react";
 import "./pageHeader.css";
-import CardGrid from "../CardGrid";
+import CardGrid from "../js/CardGrid";
 
 function AllHabits({userID}) {
     return (

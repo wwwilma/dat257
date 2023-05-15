@@ -1,4 +1,0 @@
-This week has gone well, it was a short sprint but we finished all tasks. I contributed to two of the cards, one was starting the 
-project and the other one was creating a counter which incremented each time a button was clicked. There was some trouble starting
-the project and making it work on all 8 team members computers but it worked out in the end. This weeks sprint was sort of a test sprint,
-so I'm really looking forward to see where the project goes next week and learning more about React.

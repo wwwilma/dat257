@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import "./Card.css";
+import "../css/Card.css";
 import axios from "axios";
 
 export default function CardGridFavorite({ user }) { // Destructure the prop correctly
@@ -24,7 +24,7 @@ export default function CardGridFavorite({ user }) { // Destructure the prop cor
                     key={habit.id}
                     title={habit.name}
                     desc={habit.description}
-                    imgSrc={require(`./img/${habit.id.toString()}.svg`)}
+                    imgSrc={require(`../img/${habit.id.toString()}.svg`)}
                     habitId={habit.id}
                     user={user}
                 />

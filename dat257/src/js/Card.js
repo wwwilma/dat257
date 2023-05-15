@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Card.css";
-import infoIcon from "./img/info-icon.jpg";
-import starIcon from "./img/star-regular.svg";
-import starFilled from "./img/star-solid.svg";
-import xIcon from "./img/x-icon.jpg";
+import "../css/Card.css";
+import infoIcon from "../img/info-icon.jpg";
+import starIcon from "../img/star-regular.svg";
+import starFilled from "../img/star-solid.svg";
+import xIcon from "../img/x-icon.jpg";
 import axios from "axios";
 
 

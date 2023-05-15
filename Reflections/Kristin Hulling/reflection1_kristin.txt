@@ -1,0 +1,3 @@
+During this first week, my focus has been on learning React and JavaScript, which are new to me. I have read information and experimented with some basic code. 
+I have also setup the environment to work on my computer. I believe it's important to create more user stories, so everyone can have a task to work on at any given 
+time. Next week, focus will be to build the application, so everyone can contribute with their code.

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Heatmap from '../Heatmap';
+import Heatmap from '../js/Heatmap';
 import axios from "axios";
 
 function Statistics({userID}) {

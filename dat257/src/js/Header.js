@@ -1,8 +1,8 @@
 import React from 'react'
-import './Header.css'
-import './Profile.css'
-import logo from './img/Track_logo.png'
-import profilelogo from './profile.svg'
+import '../css/Header.css'
+import '../css/Profile.css'
+import logo from '../img/Track_logo.png'
+import profilelogo from '../profile.svg'
 
 
 
