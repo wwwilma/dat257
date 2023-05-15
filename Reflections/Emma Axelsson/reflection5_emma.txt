@@ -1,0 +1,5 @@
+Last week Lovisa and I did not manage to finish our user story where the heatmap should be connected to the statistics from the 
+database. This week we continued the work with that. In the end of last week we had some trouble with converting the data to the 
+right format. After some time we solved that problem but got some small other errors, so after some time and debugging the heatmap
+works fine! I'm satisfied with the work and that the user story ended up completely done since nexr week is the last sprint. 
+Looking forward to complete the work with the application with the final touches!
