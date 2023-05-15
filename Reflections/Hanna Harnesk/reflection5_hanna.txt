@@ -1,0 +1,6 @@
+This week I did have to work from home a lot, again, due to yet another VAB. 
+Me and Pauline worked together on making a more distict way of changing the users,
+where we exchanged the menytab ”all users” for a ”change user”-icon in the header. 
+This worked well and we finished most of it on Wednesday, except for minor changes. 
+Last week I wanted to work more hands-on with the code, however I still mostly came with verbal input and feedback, 
+so we wish remain the same for the next sprint. 
