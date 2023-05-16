@@ -1,50 +1,37 @@
-/* profile-icon */
-.profile-logo{
+
+
+/* Dropdown Button */
+.switchuser {
     position: absolute;
     width: 50px;
     height: 50px;
     right: 130px;
-    top: 15px;
-    margin-top: 10px;
-}
-
-
-
-
-/* Dropdown Button */
-.dropbtn {
-    /*visibility: hidden;*/
-    opacity: 0.0;
-    padding: 25px;
-    font-size: 16px;
-    border: none;
-    right: 129px;
     top: 25px;
-    position: fixed;
-    border-radius: 15px;
+
 }
 
-.dropbtn:hover{
-    opacity: 0.2;
+
+.switchuser:hover{
+    opacity: 0.5;
 }
 
-.dropbtn:active {
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.24);
+.switch{
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+/* Show the dropdown menu on hover */
+.switch:hover .dropdown-content{
+    display: block;
+}
+
+.switchuser:active {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.40);
     transform: translateY(3px);
     border-radius: 15px;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    right: 200px;
-    top: 74px;
-    position: fixed;
-    display: inline-block;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    padding: 5px;
-
-}
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -52,6 +39,8 @@
     position: absolute;
     min-width: 105px;
     z-index: 1;
+    right: 100px;
+    top: 80px;
 }
 
 /* Links inside the dropdown #304B33 */
@@ -62,6 +51,6 @@
     display: block;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+
+
 

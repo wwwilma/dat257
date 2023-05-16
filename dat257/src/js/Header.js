@@ -33,14 +33,14 @@ function Header() {
                  }}
             />
 
-            <img src={switchuserlogo} className="profile-logo" alt="profilelogo"/>
-
-            <div className="dropdown">
-                <button className="dropbtn" onClick={onClickswitchuser}></button>
+            <div className="switch">
+                <img src={switchuserlogo} className="switchuser" alt={switchuserlogo} onClick={onClickswitchuser}/>
                 <div className="dropdown-content">
                     <a>Change user</a>
                 </div>
             </div>
+
+
         </div>
 
 
