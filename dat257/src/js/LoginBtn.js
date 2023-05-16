@@ -30,7 +30,6 @@ export default function LoginBtn({onUserChange}) {
     function handleAddUser() {
         if (newUserName.trim() !== '') {
             const newUser = {
-                id: 1,
                 name: newUserName.trim()
             };
             setUsers(prevUsers => [...prevUsers, newUser]);
