@@ -1,9 +1,12 @@
+/* This class is made to act as a constructor for an array that includes all the necessary
+*  SQL query's to create a new user*/
 const getNewUserQueryArray= (newUserID, newUserName) => {
-
+    //This function generates the query for the database.Users table
     function GenerateNewUserQuery(newUserID, newUserName) {
         return `INSERT INTO database.users VALUES (${newUserID}, '${newUserName}');`;
     }
 
+    //This function generates the query for the database.Trackers table with the dates set between 2023-01-01 and 2023-12-31
     function GenerateNewTrackersQuery(newUserID) {
         const startDate = new Date("2023-01-01");
         const endDate = new Date("2023-12-31");
@@ -20,6 +23,7 @@ const getNewUserQueryArray= (newUserID, newUserName) => {
         return insertStatements.slice(0, -1) + ";"
     }
 
+//This function generates the query for the database.FavoriteHabits table
     function GenerateNewFavoritesQuery(newUserID) {
         const habitIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 

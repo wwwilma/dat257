@@ -118,6 +118,8 @@ app.post('/favorite/:userID/:habitID', (req, res) => {
         });
 });
 
+//Define the POST '/createUser'
+//This post send 3 requests to the database to create the new user
 app.post('/createUser', (req, res) => {
     try {
         const userId = parseInt(req.body.newUserID);
@@ -134,6 +136,8 @@ app.post('/createUser', (req, res) => {
     }
 });
 
+//Define the POST '/deleteUser'
+//This post send 3 requests to the database to delete a selected user
 app.post('/deleteUser', (req, res) => {
     try {
         const userId = parseInt(req.body.newUserID);

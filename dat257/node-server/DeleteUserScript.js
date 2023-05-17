@@ -1,3 +1,5 @@
+/* This class is made to act as a constructor for an array that includes all the necessary
+*  SQL query's to delete a selected user*/
 const getDeleteUserQueryArray= (userID) => {
 
 

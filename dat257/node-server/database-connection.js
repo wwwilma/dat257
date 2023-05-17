@@ -121,6 +121,7 @@ const setFavoriteHabit = (userId, habitId, favorite) => {
         });
 };
 
+//customQuery takes in query and sends it to the database
 const customQuery = (query) => {
     return crateClient
         .query(`${query}`)
