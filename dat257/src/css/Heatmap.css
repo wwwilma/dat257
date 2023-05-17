@@ -14,7 +14,8 @@
 .year-heatmap-size{
     padding: 2em;
     height: 100%;
-    width: 250%;
-    overflow: auto;
+    width: 275%;
+    overflow: inherit;
+    flex-direction: row;
 }
 
