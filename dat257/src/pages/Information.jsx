@@ -11,8 +11,6 @@ function Information() {
             <p>
                 <ul>
                     <li>Abolish extreme poverty,</li>
-                    <li>On the Home page, you can find the daily habits you are currently
-                        tracking.</li>
                     <li>Decrease inequality and injustice in the world,</li>
                     <li>Promote peace and justice,</li>
                     <li>Solve the climate crisis.</li>
