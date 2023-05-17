@@ -17,7 +17,7 @@ export default function LoginBtn({onUserChange}) {
     useEffect(() => {
         getAllUsers()
     }, []);
-
+    //Get all users from db, and set newUserId to the highest id +1
     function getAllUsers(){
         axios.get('http://localhost:3001/users')
             .then(response => {
@@ -36,6 +36,7 @@ export default function LoginBtn({onUserChange}) {
         onUserChange(newUserID)
         navigate('/Home');
     }
+    //add user to db and add the new user to the users constant
     function handleAddUser() {
         async function addUserToDatabase(newUser) {
             try {
@@ -62,7 +63,7 @@ export default function LoginBtn({onUserChange}) {
         }
     }
 
-
+    //Deletes user from db.
     function DeleteUserFromDatabase(userID, event) {
         if (window.confirm('You want to delete?')) {
             try {
@@ -78,7 +79,7 @@ export default function LoginBtn({onUserChange}) {
         }
         event.stopPropagation()
     }
-
+    //Render the addUserBtn when clicked on it.
     function renderAddUserButton() {
         if (showInputField) {
             return (
