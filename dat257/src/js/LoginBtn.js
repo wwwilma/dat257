@@ -15,6 +15,10 @@ export default function LoginBtn({onUserChange}) {
     // When the login page is loaded it will retrieve the users from the database and
     // set them in users.
     useEffect(() => {
+        getAllUsers()
+    }, []);
+
+    function getAllUsers(){
         axios.get('http://localhost:3001/users')
             .then(response => {
                 setUsers(response.data);
@@ -24,10 +28,11 @@ export default function LoginBtn({onUserChange}) {
             .catch(error => {
                 console.log(error);
             });
-    }, []);
+    }
 
     //When the button is clicked navigate to home and set the current user.
     function handleUserChange(newUserID){
+        console.log('2')
         onUserChange(newUserID)
         navigate('/Home');
     }
@@ -56,6 +61,24 @@ export default function LoginBtn({onUserChange}) {
             setNewUserID(incrementUserID)
         }
     }
+
+
+    function DeleteUserFromDatabase(userID, event) {
+        if (window.confirm('You want to delete?')) {
+            try {
+                axios.post(`http://localhost:3001/deleteUser`, {
+                    newUserID: userID,
+                });
+            } catch (error) {
+                console.error('Error removing user', error);
+            }
+            setUsers(prevUsers => {
+                return prevUsers.filter(user => user.id !== userID)
+            });
+        }
+        event.stopPropagation()
+    }
+
     function renderAddUserButton() {
         if (showInputField) {
             return (
@@ -101,12 +124,13 @@ export default function LoginBtn({onUserChange}) {
                 <h1
                     key={user.id}
                     className="userNameBtn"
-                    onClick={() => handleUserChange(user.id)}
+                    onClick={(event) => handleUserChange(user.id,event)}
                 >
                     {user.name}
                     <img
                         src={trash}
                         className="trashImg"
+                        onClick={(event) => DeleteUserFromDatabase(user.id,event)}
                     />
                 </h1>
             ))}

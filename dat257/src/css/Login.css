@@ -45,6 +45,21 @@
     width: 5vh;
     height: 10vh;
 }
+.plusSolidImg {
+    position: relative;
+    right: 0.5rem;
+    cursor: pointer;
+    width: 5vh;
+    height: 10vh;
+}
+.plusSolidImg:hover {
+    opacity: 80%;
+}
+
+.plusSolidImg:active {
+    opacity: 50%;
+}
+
 .trashImg {
     position: relative;
     left: 3rem;
@@ -52,6 +67,16 @@
     width: 4vh;
     height: 7vh;
 }
+
+
+.trashImg:hover {
+    opacity: 80%;
+}
+
+.trashImg:active {
+    opacity: 50%;
+}
+
 .input {
     background-color: transparent;
     color: white;

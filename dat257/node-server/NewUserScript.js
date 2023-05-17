@@ -5,7 +5,7 @@ const getNewUserQueryArray= (newUserID, newUserName) => {
     }
 
     function GenerateNewTrackersQuery(newUserID) {
-        const startDate = new Date().toISOString().slice(0, 10);
+        const startDate = new Date("2023-01-01");
         const endDate = new Date("2023-12-31");
         const habits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
