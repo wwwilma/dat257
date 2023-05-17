@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
-import Heatmap from '../js/Heatmap';
+import '../css/Heatmap.css';
 import axios from "axios";
+import WeeklyHeatmap from "../js/WeeklyHeatmap";
+import YearlyHeatmap from "../js/Yearlyheatmap";
 
 function Statistics({userID}) {
 
@@ -26,8 +28,9 @@ function Statistics({userID}) {
             });
     }
     return statistics.length>0 &&(
-        <div>
-            <Heatmap statistics={statistics} />
+        <div className="flexbox-container">
+            <div className="week-heatmap-size"><WeeklyHeatmap statistics={statistics}/> </div>
+            <div className="year-heatmap-size"><YearlyHeatmap statistics={statistics} /></div>
         </div>
     )
 }

@@ -1,0 +1,21 @@
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1px;
+}
+
+.week-heatmap-size{
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+}
+
+.year-heatmap-size{
+    padding: 2em;
+    height: 100%;
+    width: 275%;
+    overflow: inherit;
+    flex-direction: row;
+}
+

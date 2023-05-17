@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import HeatMap from '@uiw/react-heat-map';
 import {endOfWeek, endOfYear, startOfWeek, startOfYear} from 'date-fns'
 
@@ -54,4 +54,4 @@ const Heatmap = ({statistics}) => {
     )
 };
 
-export default Heatmap
+export default Heatmap*/
