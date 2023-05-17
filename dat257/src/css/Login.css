@@ -39,14 +39,6 @@
     touch-action: initial;
 }
 
-
-.plusSolidImg {
-    position: relative;
-    right: 0.5rem;
-    cursor: pointer;
-    width: 5vh;
-    height: 10vh;
-}
 .plusSolidImg {
     position: relative;
     right: 0.5rem;
@@ -64,12 +56,11 @@
 
 .trashImg {
     position: relative;
-    left: 5rem;
+    right: -1rem;
     cursor: pointer;
     width: 2vh;
     height: 3.5vh;
 }
-
 
 .trashImg:hover {
     opacity: 80%;
