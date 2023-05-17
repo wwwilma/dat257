@@ -9,6 +9,7 @@ export default function LoginBtn({onUserChange}) {
     const navigate = useNavigate();
     const [newUserName, setNewUserName] = useState('');
     const [showInputField, setShowInputField] = useState(false);
+    const [newUserID, setNewUserID] = useState(0);
 
     // When the login page is loaded it will retrieve the users from the database and
     // set them in users.
@@ -16,6 +17,8 @@ export default function LoginBtn({onUserChange}) {
         axios.get('http://localhost:3001/users')
             .then(response => {
                 setUsers(response.data);
+                const highestID = Math.max(...response.data.map(userID => userID.id)) + 1;
+                setNewUserID(highestID)
             })
             .catch(error => {
                 console.log(error);
@@ -28,14 +31,28 @@ export default function LoginBtn({onUserChange}) {
         navigate('/Home');
     }
     function handleAddUser() {
+        async function addUserToDatabase(newUser) {
+            try {
+                await axios.post(`http://localhost:3001/createUser `, {
+                    newUserID: newUser.id,
+                    newUserName: newUser.name
+                });
+            } catch (error) {
+                console.error('Error creating user', error);
+            }
+        }
+
         if (newUserName.trim() !== '') {
             const newUser = {
-                id: 1,
+                id: newUserID,
                 name: newUserName.trim()
             };
             setUsers(prevUsers => [...prevUsers, newUser]);
             setNewUserName('');
             setShowInputField(false);
+            addUserToDatabase(newUser)
+            const incrementUserID = newUserID + 1;
+            setNewUserID(incrementUserID)
         }
     }
     function renderAddUserButton() {
