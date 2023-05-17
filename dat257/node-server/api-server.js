@@ -1,6 +1,10 @@
 // Import necessary dependencies
 const express = require('express');
-const {getUsers, getUserName, getAllHabits, getTimesDone, incrementTimesDone, getFavoriteHabits, setFavoriteHabit, getStatistics} = require('./database-connection');
+const {getUsers, getUserName, getAllHabits, getTimesDone, incrementTimesDone, getFavoriteHabits, setFavoriteHabit, getStatistics,
+    customQuery
+} = require('./database-connection');
+const {getNewUserQueryArray} = require('./NewUserScript.js');
+const {getDeleteUserQueryArray} = require('./DeleteUserScript.js');
 // Create an Express app
 const app = express();
 const port = 3001;
@@ -113,6 +117,43 @@ app.post('/favorite/:userID/:habitID', (req, res) => {
             res.status(500).send(error);
         });
 });
+
+//Define the POST '/createUser'
+//This post send 3 requests to the database to create the new user
+app.post('/createUser', (req, res) => {
+    try {
+        const userId = parseInt(req.body.newUserID);
+        const userName = req.body.newUserName;
+        const queryArray = getNewUserQueryArray(userId, userName);
+
+        customQuery(queryArray[0]);
+        customQuery(queryArray[1]);
+        customQuery(queryArray[2]);
+
+        res.status(200).send('User, Trackers, and Favorite added');
+    } catch (error) {
+        res.status(500).send(error);
+    }
+});
+
+//Define the POST '/deleteUser'
+//This post send 3 requests to the database to delete a selected user
+app.post('/deleteUser', (req, res) => {
+    try {
+        const userId = parseInt(req.body.newUserID);
+        const queryArray = getDeleteUserQueryArray(userId);
+
+        customQuery(queryArray[0]);
+        customQuery(queryArray[1]);
+        customQuery(queryArray[2]);
+
+        res.status(200).send('User, Trackers, and Favorite added');
+    } catch (error) {
+        res.status(500).send(error);
+    }
+});
+
+
 // Start the Express app on the specified port
 app.listen(port, () => {
     console.log(`App running on port ${port}.`);

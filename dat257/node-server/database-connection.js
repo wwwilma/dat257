@@ -121,6 +121,15 @@ const setFavoriteHabit = (userId, habitId, favorite) => {
         });
 };
 
+//customQuery takes in query and sends it to the database
+const customQuery = (query) => {
+    return crateClient
+        .query(`${query}`)
+        .catch((err) => {
+            console.error(err);
+            crateClient.end();
+        });
+};
 
 
 
@@ -135,4 +144,5 @@ module.exports = {
     incrementTimesDone: incrementTimesDone,
     getFavoriteHabits: getFavoriteHabits,
     setFavoriteHabit: setFavoriteHabit,
+    customQuery: customQuery,
 };
