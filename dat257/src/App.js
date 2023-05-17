@@ -21,7 +21,7 @@ export default function App() {
 
     return (
         <BrowserRouter>
-            <div>
+            <div className="outline">
                 <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} userID = {userID}/>
                 <Header />
                 <div className="pages">

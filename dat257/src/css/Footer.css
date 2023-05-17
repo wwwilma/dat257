@@ -8,6 +8,7 @@
     justify-content: center;
     background-color: #3A5A40;
     color: #D6CEB7;
-    margin-top: auto;
-    width: 100%;
+    width: 100vw;
+    bottom: 0%;
+    position: absolute;
 }
