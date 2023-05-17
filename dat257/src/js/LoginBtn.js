@@ -3,6 +3,7 @@ import "../css/Login.css";
 import axios from "axios";
 import {useNavigate } from 'react-router-dom';
 import plusSolid from "../img/plus-solid.svg";
+import trash from "../img/trash-solid.svg";
 // Buttons for usernames on login page.
 export default function LoginBtn({onUserChange}) {
     const [users, setUsers] = useState([]);
@@ -85,6 +86,10 @@ export default function LoginBtn({onUserChange}) {
                     onClick={() => handleUserChange(user.id)}
                 >
                     {user.name}
+                    <img
+                        src={trash}
+                        className="trashImg"
+                    />
                 </h1>
             ))}
             {renderAddUserButton()}

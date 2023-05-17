@@ -45,6 +45,13 @@
     width: 5vh;
     height: 10vh;
 }
+.trashImg {
+    position: relative;
+    left: 3rem;
+    cursor: pointer;
+    width: 4vh;
+    height: 7vh;
+}
 .input {
     background-color: transparent;
     color: white;
