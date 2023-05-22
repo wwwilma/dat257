@@ -16,4 +16,6 @@ Giving out information about why sustainable actions are important is a part of 
 * Pauline Björk – [paob02](https://github.com/paob02)       
 * Wilma Nordlund – [wwwilma](https://github.com/wwwilma) 
 
-[Go to our Trello Workspace](https://trello.com/invite/b/MILDPngq/ATTI8731d904a73a97d2f1415420018cacc2E4A8EC9D/dat257)  
+[Go to our Trello Workspace](https://trello.com/invite/b/MILDPngq/ATTI8731d904a73a97d2f1415420018cacc2E4A8EC9D/dat257)
+
+[Go to our Google Drive](https://drive.google.com/drive/folders/1Gat5baFhNQh8Tj235_1AbmDc_X4ZKi3z?usp=sharing)
