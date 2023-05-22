@@ -8,7 +8,7 @@ Giving out information about why sustainable actions are important is a part of 
 
 ## Running the Application
 To start the app go to;    
-_dat257/dat257/src _   
+_dat257/dat257/src_   
 
 Here, write;    
 _npm install_    
@@ -16,6 +16,7 @@ in the terminal.
    
 In the same folder, write;    
 _npm start_    
+
 in the terminal.   
    
 Then you’ll need to go to;    
