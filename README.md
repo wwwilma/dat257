@@ -22,7 +22,7 @@ Then you’ll need to go to;
 _dat257/dat257/node-server_    
 
 and write;    
-_node api-server.js_ 
+_node api-server.js_    
 in the terminal.   
    
 You should now be able to see the app in your browser on http://localhost:3000/
