@@ -6,6 +6,27 @@ Our goal is to create a website where users can track their daily habits by trac
 Our idea is to make users aware of their impact on the planet accourding to goal 12 of UN's sustainability goals; Responsible Consumption and Production.
 Giving out information about why sustainable actions are important is a part of the website's goal to help motivate the users to change their habits for the better.
 
+## Running the Application
+To start the app go to; 
+_dat257/dat257/src _
+
+Here, write; 
+_npm install_ 
+in the terminal.
+
+In the same folder, write; 
+_npm start_ 
+in the terminal.
+
+Then you’ll need to go to; 
+
+_dat257/dat257/node-server_ 
+and write; 
+_node api-server.js _
+in the terminal.
+
+You should now be able to see the app in your browser on http://localhost:3000/
+
 ## Project Group 10  
 * Atosa Daneshvar-Minabi – [Tussies](https://github.com/Tussies) 
 * Emma Axelsson – [emmaaxelsso](https://github.com/emmaaxelsso)
