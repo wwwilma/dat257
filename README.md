@@ -7,24 +7,26 @@ Our idea is to make users aware of their impact on the planet accourding to goal
 Giving out information about why sustainable actions are important is a part of the website's goal to help motivate the users to change their habits for the better.
 
 ## Running the Application
-To start the app go to; 
-_dat257/dat257/src _
+To start the app go to;    
+_dat257/dat257/src _   
 
-Here, write; 
-_npm install_ 
-in the terminal.
+Here, write;    
+_npm install_    
+in the terminal.   
+   
+In the same folder, write;    
+_npm start_    
+in the terminal.   
+   
+Then you’ll need to go to;    
 
-In the same folder, write; 
-_npm start_ 
-in the terminal.
+_dat257/dat257/node-server_    
 
-Then you’ll need to go to; 
+and write;    
+_node api-server.js _   
 
-_dat257/dat257/node-server_ 
-and write; 
-_node api-server.js _
-in the terminal.
-
+in the terminal.   
+   
 You should now be able to see the app in your browser on http://localhost:3000/
 
 ## Project Group 10  
